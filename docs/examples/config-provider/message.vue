@@ -8,7 +8,7 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from '@lt13.10/element-plus'
 const config = reactive({
   max: 3,
 })

@@ -23,7 +23,8 @@ async function main() {
   const pkgs = Object.fromEntries(
     (await getWorkspacePackages()).map((pkg) => [pkg.manifest.name!, pkg])
   )
-  const elementPlus = pkgs['element-plus'] || pkgs['@element-plus/nightly']
+  const elementPlus =
+    pkgs['@lt13.10/element-plus'] || pkgs['@element-plus/nightly']
   const eslintConfig = pkgs['@element-plus/eslint-config']
   const metadata = pkgs['@element-plus/metadata']
 

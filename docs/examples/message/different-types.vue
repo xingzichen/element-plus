@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ElMessage } from 'element-plus'
+import { ElMessage } from '@lt13.10/element-plus'
 
 const open1 = () => {
   ElMessage('this is a message.')

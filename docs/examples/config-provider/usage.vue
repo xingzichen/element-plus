@@ -12,8 +12,8 @@
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
-import en from 'element-plus/dist/locale/en.mjs'
+import zhCn from '@lt13.10/element-plus/dist/locale/zh-cn.mjs'
+import en from '@lt13.10/element-plus/dist/locale/en.mjs'
 
 const language = ref('zh-cn')
 const locale = computed(() => (language.value === 'zh-cn' ? zhCn : en))

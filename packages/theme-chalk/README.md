@@ -13,13 +13,13 @@ npm i element-plus
 Use Sass import
 
 ```css
-@use 'element-plus/lib/theme-chalk/index.scss';
+@use '@lt13.10/element-plus/lib/theme-chalk/index.scss';
 ```
 
 Or Use vite/webpack
 
 ```javascript
-import 'element-plus/lib/theme-chalk/index.css'
+import '@lt13.10/element-plus/lib/theme-chalk/index.css'
 ```
 
 Or
@@ -34,8 +34,8 @@ Or
 ## Import on demand
 
 ```javascript
-import 'element-plus/lib/theme-chalk/input.css'
-import 'element-plus/lib/theme-chalk/select.css'
+import '@lt13.10/element-plus/lib/theme-chalk/input.css'
+import '@lt13.10/element-plus/lib/theme-chalk/select.css'
 
 // ...
 ```

@@ -19,8 +19,8 @@ jobs:
         if: steps.isTeamMember.outputs.require-result == 'false'
         with:
           actions: 'add-assignees, add-reviewers, greeting, add-labels'
-          assignees: 'element-plus/backers'
-          reviewers: 'element-plus/backers'
+          assignees: '@lt13.10/element-plus/backers'
+          reviewers: '@lt13.10/element-plus/backers'
           labels: 'Contribution::Community'
           token: ${{ github.token }}
           pr-number: ${{ github.event.pull_request.number }}

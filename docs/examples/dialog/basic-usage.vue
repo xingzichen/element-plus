@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ElMessageBox } from 'element-plus'
+import { ElMessageBox } from '@lt13.10/element-plus'
 
 const dialogVisible = ref(false)
 

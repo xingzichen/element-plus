@@ -18,7 +18,7 @@ import {
   ElTag,
   TableV2FixedDir,
   TableV2SortOrder,
-} from 'element-plus'
+} from '@lt13.10/element-plus'
 
 import type { Column, SortBy } from '@element-plus/components/table-v2'
 

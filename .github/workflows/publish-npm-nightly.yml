@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'element-plus' }}
+    if: ${{ github.repository_owner == '@lt13.10/element-plus' }}
 
     strategy:
       matrix:
@@ -39,7 +39,7 @@ jobs:
   publish:
     needs: test
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'element-plus' }}
+    if: ${{ github.repository_owner == '@lt13.10/element-plus' }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3

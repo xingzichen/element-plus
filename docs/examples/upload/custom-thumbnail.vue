@@ -39,7 +39,7 @@
 import { ref } from 'vue'
 import { Delete, Download, Plus, ZoomIn } from '@element-plus/icons-vue'
 
-import type { UploadFile } from 'element-plus'
+import type { UploadFile } from '@lt13.10/element-plus'
 
 const dialogImageUrl = ref('')
 const dialogVisible = ref(false)

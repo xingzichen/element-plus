@@ -47,7 +47,7 @@ export default defineConfig(async ({ mode }) => {
   const optimizeDeps = [...new Set([...epDeps, ...docsDeps])].filter(
     (dep) =>
       !dep.startsWith('@types/') &&
-      !['@element-plus/metadata', 'element-plus'].includes(dep)
+      !['@element-plus/metadata', '@lt13.10/element-plus'].includes(dep)
   )
 
   optimizeDeps.push(

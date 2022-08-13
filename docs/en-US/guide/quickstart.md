@@ -16,8 +16,8 @@ If you don’t care about the bundle size so much, it’s more convenient to use
 ```typescript
 // main.ts
 import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+import ElementPlus from '@lt13.10/element-plus'
+import '@lt13.10/element-plus/dist/index.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -115,7 +115,7 @@ And refer to the [docs](https://github.com/element-plus/unplugin-element-plus#re
   <el-button>I am ElButton</el-button>
 </template>
 <script>
-  import { ElButton } from 'element-plus'
+  import { ElButton } from '@lt13.10/element-plus'
   export default {
     components: { ElButton },
   }
@@ -140,8 +140,8 @@ You need to manually import the styles if you're using `unplugin-element-plus` a
 Example:
 
 ```ts
-import 'element-plus/es/components/message/style/css'
-import { ElMessage } from 'element-plus'
+import '@lt13.10/element-plus/es/components/message/style/css'
+import { ElMessage } from '@lt13.10/element-plus'
 ```
 
 :::
@@ -161,7 +161,7 @@ Full import:
 
 ```ts
 import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
+import ElementPlus from '@lt13.10/element-plus'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -179,7 +179,7 @@ On-demand:
 
 <script>
 import { defineComponent } from 'vue'
-import { ElConfigProvider } from 'element-plus'
+import { ElConfigProvider } from '@lt13.10/element-plus'
 
 export default defineComponent({
   components: {
