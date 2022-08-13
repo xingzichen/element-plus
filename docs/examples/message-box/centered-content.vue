@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { ElMessage, ElMessageBox } from '@lt13.10/element-plus'
 
 const open = () => {
   ElMessageBox.confirm(

@@ -15,10 +15,10 @@ import {
   ElIcon,
   ElPopover,
   TableV2FixedDir,
-} from 'element-plus'
+} from '@lt13.10/element-plus'
 import { Filter } from '@element-plus/icons-vue'
 
-import type { HeaderCellSlotProps } from 'element-plus'
+import type { HeaderCellSlotProps } from '@lt13.10/element-plus'
 
 const generateColumns = (length = 10, prefix = 'column-', props?: any) =>
   Array.from({ length }).map((_, columnIndex) => ({

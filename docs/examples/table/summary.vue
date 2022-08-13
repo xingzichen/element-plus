@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { TableColumnCtx } from 'element-plus/es/components/table/src/table-column/defaults'
+import type { TableColumnCtx } from '@lt13.10/element-plus/es/components/table/src/table-column/defaults'
 
 interface Product {
   id: string

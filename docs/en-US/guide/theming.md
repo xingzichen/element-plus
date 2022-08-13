@@ -83,7 +83,7 @@ Because the sass team said they will remove `@import` eventually.
 ```scss
 // styles/element/index.scss
 /* just override what you need */
-@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+@forward '@lt13.10/element-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
     'primary': (
       'base': green,
@@ -116,7 +116,7 @@ If they are mixed together, each hot update of `element-plus` needs to compile a
 ```ts
 import { createApp } from 'vue'
 import './styles/element/index.scss'
-import ElementPlus from 'element-plus'
+import ElementPlus from '@lt13.10/element-plus'
 import App from './App.vue'
 
 const app = createApp(App)

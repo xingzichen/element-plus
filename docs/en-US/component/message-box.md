@@ -130,7 +130,7 @@ Now message box accepts a `context` as second (forth if you are using message bo
 
 ```ts
 import { getCurrentInstance } from 'vue'
-import { ElMessageBox } from 'element-plus'
+import { ElMessageBox } from '@lt13.10/element-plus'
 
 // in your setup method
 const { appContext } = getCurrentInstance()!
@@ -145,7 +145,7 @@ ElMessageBox.alert('Hello world!', 'Title', {}, appContext)
 If you prefer importing `MessageBox` on demand:
 
 ```ts
-import { ElMessageBox } from 'element-plus'
+import { ElMessageBox } from '@lt13.10/element-plus'
 ```
 
 The corresponding methods are: `ElMessageBox`, `ElMessageBox.alert`, `ElMessageBox.confirm` and `ElMessageBox.prompt`. The parameters are the same as above.

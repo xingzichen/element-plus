@@ -1,0 +1,1158 @@
+
+> @ build /Users/giraffee/Documents/Git/element-plus
+> pnpm run -C internal/build start
+
+
+> @element-plus/build@0.0.1 start /Users/giraffee/Documents/Git/element-plus/internal/build
+> gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts
+
+[20:01:29] Requiring external module @esbuild-kit/cjs-loader
+[20:01:33] Using gulpfile ~/Documents/Git/element-plus/internal/build/gulpfile.ts
+[20:01:33] Starting 'default'...
+[20:01:33] Starting 'clean'...
+ℹ run: pnpm run clean
+
+> @ clean /Users/giraffee/Documents/Git/element-plus
+> pnpm run clean:dist && pnpm run -r --parallel clean
+
+
+> @ clean:dist /Users/giraffee/Documents/Git/element-plus
+> rimraf dist
+
+Scope: 17 of 18 workspace projects
+packages/theme-chalk clean$ rimraf dist
+packages/theme-chalk clean: Done
+[20:01:35] Finished 'clean' after 2.01 s
+[20:01:35] Starting 'createOutput'...
+[20:01:35] Finished 'createOutput' after 9.83 ms
+[20:01:35] Starting 'shellTask:buildModules'...
+[20:01:35] Starting 'shellTask:buildFullBundle'...
+[20:01:35] Starting 'shellTask:generateTypesDefinitions'...
+[20:01:35] Starting 'shellTask:buildHelper'...
+ℹ run: pnpm run start buildModules
+ℹ run: pnpm run start buildFullBundle
+ℹ run: pnpm run start generateTypesDefinitions
+ℹ run: pnpm run start buildHelper
+[20:01:35] Starting 'buildThemeChalk'...
+ℹ run: pnpm run -C packages/theme-chalk build
+
+> @element-plus/build@0.0.1 start /Users/giraffee/Documents/Git/element-plus/internal/build
+> gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts "buildModules"
+
+
+> @element-plus/build@0.0.1 start /Users/giraffee/Documents/Git/element-plus/internal/build
+> gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts "buildFullBundle"
+
+
+> @element-plus/build@0.0.1 start /Users/giraffee/Documents/Git/element-plus/internal/build
+> gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts "buildHelper"
+
+
+> @element-plus/build@0.0.1 start /Users/giraffee/Documents/Git/element-plus/internal/build
+> gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts "generateTypesDefinitions"
+
+
+> @element-plus/theme-chalk@0.1.0 build /Users/giraffee/Documents/Git/element-plus/packages/theme-chalk
+> gulp --require @esbuild-kit/cjs-loader
+
+[20:01:37] Requiring external module @esbuild-kit/cjs-loader
+[20:01:37] Requiring external module @esbuild-kit/cjs-loader
+[20:01:37] Requiring external module @esbuild-kit/cjs-loader
+[20:01:37] Requiring external module @esbuild-kit/cjs-loader
+[20:01:37] Requiring external module @esbuild-kit/cjs-loader
+[20:01:43] Using gulpfile ~/Documents/Git/element-plus/packages/theme-chalk/gulpfile.ts
+[20:01:43] Starting 'default'...
+[20:01:43] Starting 'copyThemeChalkSource'...
+[20:01:43] Starting 'buildThemeChalk'...
+✔ /affix.css: 0.069 KB -> 0.032 KB
+[20:01:44] Using gulpfile ~/Documents/Git/element-plus/internal/build/gulpfile.ts
+[20:01:44] Starting 'generateTypesDefinitions'...
+[20:01:44] Using gulpfile ~/Documents/Git/element-plus/internal/build/gulpfile.ts
+[20:01:44] Starting 'buildModules'...
+[20:01:44] Using gulpfile ~/Documents/Git/element-plus/internal/build/gulpfile.ts
+[20:01:44] Starting 'buildFullBundle'...
+[20:01:44] Starting 'buildFullMinified'...
+[20:01:44] Starting 'buildFull'...
+[20:01:44] 'buildFullMinified' errored after 51 ms
+[20:01:44] Error: Cannot find module '/Users/giraffee/Documents/Git/element-plus/packages/@lt13.10/element-plus/package.json'
+Require stack:
+- /Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.f.default._resolveFilename (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/@esbuild-kit+cjs-loader@2.2.1/node_modules/@esbuild-kit/cjs-loader/dist/index.js:1:1346)
+    at Function.resolve (node:internal/modules/cjs/helpers:108:19)
+    at null._resolve (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/jiti@1.13.0/node_modules/jiti/dist/jiti.js:1:192841)
+    at null.jiti (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/jiti@1.13.0/node_modules/jiti/dist/jiti.js:1:195025)
+    at getPackageManifest (/Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts:17:10)
+    at getPackageDependencies (/Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts:23:20)
+    at null.generateExternal (/Users/giraffee/Documents/Git/element-plus/internal/build/src/utils/rollup.ts:6:46)
+    at null.buildFullEntry (/Users/giraffee/Documents/Git/element-plus/internal/build/src/tasks/full-bundle.ts:69:21)
+    at null.<anonymous> (/Users/giraffee/Documents/Git/element-plus/internal/build/src/tasks/full-bundle.ts:149:16)
+[20:01:44] 'buildFullBundle' errored after 64 ms
+✔ /alert.css: 3.46 KB -> 3.018 KB
+ ELIFECYCLE  Command failed with exit code 1.
+[20:01:44] 'shellTask:buildFullBundle' errored after 9.5 s
+[20:01:44] /Users/giraffee/Documents/Git/element-plus/internal/build/src/utils/process.ts:24
+          new Error(`Command failed. \n Command: ${command} \n Code: ${code}`)
+          ^
+
+Error: Command failed. 
+ Command: pnpm run start buildFullBundle 
+ Code: 1
+    at ChildProcess.<anonymous> (/Users/giraffee/Documents/Git/element-plus/internal/build/src/utils/process.ts:24:11)
+    at ChildProcess.emit (node:events:520:28)
+    at ChildProcess.emit (node:domain:537:15)
+    at maybeClose (node:internal/child_process:1092:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)
+    at Process.callbackTrampoline (node:internal/async_hooks:130:17)
+[20:01:44] 'default' errored after 12 s
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.
+[20:01:45] Using gulpfile ~/Documents/Git/element-plus/internal/build/gulpfile.ts
+[20:01:45] Starting 'buildHelper'...
+[20:01:45] 'buildHelper' errored after 3.98 ms
+[20:01:45] Error: Cannot find module '/Users/giraffee/Documents/Git/element-plus/packages/@lt13.10/element-plus/package.json'
+Require stack:
+- /Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.f.default._resolveFilename (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/@esbuild-kit+cjs-loader@2.2.1/node_modules/@esbuild-kit/cjs-loader/dist/index.js:1:1346)
+    at Function.resolve (node:internal/modules/cjs/helpers:108:19)
+    at null._resolve (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/jiti@1.13.0/node_modules/jiti/dist/jiti.js:1:192841)
+    at null.jiti (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/jiti@1.13.0/node_modules/jiti/dist/jiti.js:1:195025)
+    at getPackageManifest (/Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts:17:10)
+    at null.buildHelper (/Users/giraffee/Documents/Git/element-plus/internal/build/src/tasks/helper.ts:87:29)
+    at null.taskWrapper (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/undertaker@1.3.0/node_modules/undertaker/lib/set-task.js:13:15)
+    at bound (node:domain:421:15)
+    at runBound (node:domain:432:12)
+✔ /aside.css: 0.144 KB -> 0.094 KB
+[20:01:45] 'buildModules' errored after 491 ms
+[20:01:45] Error: Cannot find module '/Users/giraffee/Documents/Git/element-plus/packages/@lt13.10/element-plus/package.json'
+Require stack:
+- /Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.f.default._resolveFilename (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/@esbuild-kit+cjs-loader@2.2.1/node_modules/@esbuild-kit/cjs-loader/dist/index.js:1:1346)
+    at Function.resolve (node:internal/modules/cjs/helpers:108:19)
+    at null._resolve (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/jiti@1.13.0/node_modules/jiti/dist/jiti.js:1:192841)
+    at null.jiti (/Users/giraffee/Documents/Git/element-plus/node_modules/.pnpm/jiti@1.13.0/node_modules/jiti/dist/jiti.js:1:195025)
+    at getPackageManifest (/Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts:17:10)
+    at getPackageDependencies (/Users/giraffee/Documents/Git/element-plus/internal/build-utils/src/pkg.ts:23:20)
+    at null.generateExternal (/Users/giraffee/Documents/Git/element-plus/internal/build/src/utils/rollup.ts:6:46)
+    at null.buildModules (/Users/giraffee/Documents/Git/element-plus/internal/build/src/tasks/modules.ts:45:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+✔ /autocomplete.css: 2.47 KB -> 2.169 KB
+✔ /avatar.css: 1.046 KB -> 0.875 KB
+✔ /backtop.css: 0.656 KB -> 0.543 KB
+✔ /badge.css: 1.363 KB -> 1.151 KB
+✔ /base.css: 9.218 KB -> 8.201 KB
+✔ /breadcrumb-item.css: 0 KB -> 0 KB
+✔ /breadcrumb.css: 1.321 KB -> 1.126 KB
+✔ /button-group.css: 3.678 KB -> 3.311 KB
+✔ /button.css: 17.219 KB -> 15.736 KB
+✔ /calendar.css: 1.814 KB -> 1.588 KB
+✔ /card.css: 0.877 KB -> 0.755 KB
+✔ /carousel-item.css: 0.995 KB -> 0.83 KB
+✔ /carousel.css: 3.781 KB -> 3.254 KB
+✔ /cascader-panel.css: 3.071 KB -> 2.656 KB
+✔ /cascader.css: 6.466 KB -> 5.708 KB
+✔ /check-tag.css: 0.659 KB -> 0.557 KB
+✔ /checkbox-button.css: 3.304 KB -> 2.928 KB
+✔ /checkbox-group.css: 0.086 KB -> 0.045 KB
+✔ /checkbox.css: 7.347 KB -> 6.535 KB
+✔ /col.css: 44.334 KB -> 32.919 KB
+✔ /collapse-item.css: 0 KB -> 0 KB
+✔ /collapse-transition.css: 0 KB -> 0 KB
+✔ Added source files
+✔ /collapse.css: 4.901 KB -> 4.366 KB
+✔ /color-picker.css: 7.34 KB -> 6.256 KB
+✔ /config-provider.css: 0 KB -> 0 KB
+✔ /container.css: 0.216 KB -> 0.151 KB
+✔ /date-picker.css: 27.978 KB -> 24.552 KB
+✔ /descriptions-item.css: 1.135 KB -> 1.018 KB
+✔ /descriptions.css: 2.699 KB -> 2.414 KB
+✔ /dialog.css: 5.277 KB -> 4.349 KB
+✔ /display.css: 1.223 KB -> 0.982 KB
+✔ /divider.css: 0.867 KB -> 0.706 KB
+✔ /drawer.css: 2.767 KB -> 2.333 KB
+✔ /dropdown-item.css: 0 KB -> 0 KB
+✔ /dropdown-menu.css: 0 KB -> 0 KB
+✔ /dropdown.css: 4.422 KB -> 3.855 KB
+✔ /empty.css: 1.443 KB -> 1.22 KB
+✔ /footer.css: 0.219 KB -> 0.162 KB
+✔ /form-item.css: 0 KB -> 0 KB
+✔ /form.css: 4.047 KB -> 3.494 KB
+✔ /header.css: 0.219 KB -> 0.162 KB
+✔ /icon.css: 0.862 KB -> 0.66 KB
+✔ /image-viewer.css: 3.065 KB -> 2.43 KB
+✔ /image.css: 0.728 KB -> 0.579 KB
+✔ /index.css: 373.328 KB -> 322.228 KB
+✔ /infinite-scroll.css: 0 KB -> 0 KB
+✔ /input-number.css: 4.401 KB -> 3.926 KB
+✔ /input.css: 14.648 KB -> 13.195 KB
+✔ /link.css: 3.532 KB -> 3.133 KB
+✔ /loading.css: 2.392 KB -> 1.976 KB
+✔ /main.css: 0.197 KB -> 0.136 KB
+✔ /menu-item-group.css: 0 KB -> 0 KB
+✔ /menu-item.css: 0 KB -> 0 KB
+✔ /menu.css: 12.274 KB -> 10.795 KB
+✔ /message-box.css: 6.841 KB -> 5.784 KB
+✔ /message.css: 3.412 KB -> 2.987 KB
+✔ /notification.css: 3.482 KB -> 3.104 KB
+✔ /option-group.css: 0.791 KB -> 0.631 KB
+✔ /option-item.css: 1.447 KB -> 1.262 KB
+✔ /option.css: 0.657 KB -> 0.545 KB
+✔ /overlay.css: 0.26 KB -> 0.183 KB
+✔ /page-header.css: 0.714 KB -> 0.563 KB
+✔ /pagination.css: 10.059 KB -> 8.998 KB
+✔ /popconfirm.css: 0.209 KB -> 0.146 KB
+✔ /popover.css: 1.327 KB -> 1.157 KB
+✔ /popper.css: 2.641 KB -> 2.299 KB
+✔ /progress.css: 2.895 KB -> 2.386 KB
+✔ /radio-button.css: 3.671 KB -> 3.251 KB
+✔ /radio-group.css: 0.131 KB -> 0.082 KB
+✔ /radio.css: 5.13 KB -> 4.39 KB
+✔ /rate.css: 1.552 KB -> 1.295 KB
+✔ /reset.css: 1.467 KB -> 1.22 KB
+✔ /result.css: 1.712 KB -> 1.47 KB
+✔ /row.css: 0.557 KB -> 0.446 KB
+✔ /scrollbar.css: 1.593 KB -> 1.344 KB
+✔ /select-dropdown-v2.css: 1.084 KB -> 0.94 KB
+✔ /select-dropdown.css: 4.021 KB -> 3.724 KB
+✔ /select-v2.css: 11.831 KB -> 10.362 KB
+✔ /select.css: 9.478 KB -> 8.549 KB
+✔ /skeleton-item.css: 1.221 KB -> 1.001 KB
+✔ /skeleton.css: 0.974 KB -> 0.804 KB
+✔ /slider.css: 4.79 KB -> 4.164 KB
+✔ /space.css: 0.232 KB -> 0.16 KB
+✔ /spinner.css: 1.103 KB -> 0.84 KB
+✔ /step.css: 5.334 KB -> 4.482 KB
+✔ /steps.css: 0.278 KB -> 0.203 KB
+✔ /sub-menu.css: 0 KB -> 0 KB
+✔ /switch.css: 5.159 KB -> 4.421 KB
+✔ /tab-pane.css: 0 KB -> 0 KB
+✔ /table-column.css: 1.751 KB -> 1.439 KB
+✔ /table-v2.css: 4.993 KB -> 4.293 KB
+✔ /table.css: 18.766 KB -> 17.062 KB
+✔ /tabs.css: 18.391 KB -> 16.209 KB
+✔ /tag.css: 7.01 KB -> 6.243 KB
+✔ /time-picker.css: 16.099 KB -> 14.1 KB
+✔ /time-select.css: 14.989 KB -> 13.208 KB
+✔ /timeline-item.css: 2.181 KB -> 1.871 KB
+✔ /timeline.css: 0.861 KB -> 0.739 KB
+✔ /tooltip-v2.css: 3.461 KB -> 3.075 KB
+✔ /tooltip.css: 0 KB -> 0 KB
+✔ /transfer.css: 5.247 KB -> 4.575 KB
+✔ /tree-select.css: 0.601 KB -> 0.504 KB
+✔ /tree.css: 5.516 KB -> 4.801 KB
+✔ /upload.css: 12.891 KB -> 10.973 KB
+✔ /var.css: 5.521 KB -> 4.975 KB
+✔ /virtual-list.css: 0.471 KB -> 0.371 KB
+[20:01:56] Finished 'buildThemeChalk' after 13 s
+[20:01:56] Starting 'buildDarkCssVars'...
+✔ /css-vars.css: 3.322 KB -> 2.943 KB
+[20:01:56] Finished 'buildDarkCssVars' after 187 ms
+[20:01:56] Starting 'copyThemeChalkBundle'...
+[20:01:57] Finished 'copyThemeChalkSource' after 14 s
+[20:01:57] Finished 'copyThemeChalkBundle' after 174 ms
+[20:01:57] Finished 'default' after 14 s
+✔ Type check passed!
+✔ Definition for file: constants/date.ts generated
+✔ Definition for file: constants/aria.ts generated
+✔ Definition for file: constants/event.ts generated
+✔ Definition for file: constants/index.ts generated
+✔ Definition for file: constants/key.ts generated
+✔ Definition for file: constants/size.ts generated
+✔ Definition for file: directives/index.ts generated
+✔ Definition for file: components/index.ts generated
+✔ Definition for file: hooks/index.ts generated
+✔ Definition for file: locale/index.ts generated
+✔ Definition for file: tokens/breadcrumb.ts generated
+✔ Definition for file: tokens/button.ts generated
+✔ Definition for file: tokens/carousel.ts generated
+✔ Definition for file: tokens/collapse.ts generated
+✔ Definition for file: tokens/config-provider.ts generated
+✔ Definition for file: tokens/date-picker.ts generated
+✔ Definition for file: tokens/dialog.ts generated
+✔ Definition for file: tokens/form.ts generated
+✔ Definition for file: tokens/index.ts generated
+✔ Definition for file: tokens/pagination.ts generated
+✔ Definition for file: tokens/popper.ts generated
+✔ Definition for file: tokens/radio.ts generated
+✔ Definition for file: tokens/row.ts generated
+✔ Definition for file: tokens/scrollbar.ts generated
+✔ Definition for file: tokens/slider.ts generated
+✔ Definition for file: tokens/tabs.ts generated
+✔ Definition for file: tokens/tooltip-v2.ts generated
+✔ Definition for file: tokens/upload.ts generated
+✔ Definition for file: utils/animation.ts generated
+✔ Definition for file: utils/arrays.ts generated
+✔ Definition for file: utils/browser.ts generated
+✔ Definition for file: utils/error.ts generated
+✔ Definition for file: utils/functions.ts generated
+✔ Definition for file: utils/i18n.ts generated
+✔ Definition for file: utils/index.ts generated
+✔ Definition for file: utils/objects.ts generated
+✔ Definition for file: utils/raf.ts generated
+✔ Definition for file: utils/rand.ts generated
+✔ Definition for file: utils/strings.ts generated
+✔ Definition for file: utils/types.ts generated
+✔ Definition for file: utils/typescript.ts generated
+✔ Definition for file: directives/click-outside/index.ts generated
+✔ Definition for file: directives/mousewheel/index.ts generated
+✔ Definition for file: directives/repeat-click/index.ts generated
+✔ Definition for file: directives/trap-focus/index.ts generated
+✔ Definition for file: components/affix/index.ts generated
+✔ Definition for file: components/alert/index.ts generated
+✔ Definition for file: tokens/experimental-features.ts generated
+✔ Definition for file: components/breadcrumb/index.ts generated
+✔ Definition for file: components/autocomplete/index.ts generated
+✔ Definition for file: components/button/index.ts generated
+✔ Definition for file: components/card/index.ts generated
+✔ Definition for file: components/calendar/index.ts generated
+✔ Definition for file: components/carousel/index.ts generated
+✔ Definition for file: components/cascader-panel/index.ts generated
+✔ Definition for file: components/check-tag/index.ts generated
+✔ Definition for file: components/col/index.ts generated
+✔ Definition for file: components/checkbox/index.ts generated
+✔ Definition for file: components/collapse/index.ts generated
+✔ Definition for file: components/collapse-transition/index.ts generated
+✔ Definition for file: components/collection/index.ts generated
+✔ Definition for file: components/color-picker/index.ts generated
+✔ Definition for file: components/config-provider/index.ts generated
+✔ Definition for file: components/container/index.ts generated
+✔ Definition for file: components/date-picker/index.ts generated
+✔ Definition for file: components/descriptions/index.ts generated
+✔ Definition for file: components/divider/index.ts generated
+✔ Definition for file: components/dialog/index.ts generated
+✔ Definition for file: components/drawer/index.ts generated
+✔ Definition for file: components/badge/index.ts generated
+✔ Definition for file: components/empty/index.ts generated
+✔ Definition for file: components/focus-trap/index.ts generated
+✔ Definition for file: components/form/index.ts generated
+✔ Definition for file: components/icon/index.ts generated
+✔ Definition for file: components/image/index.ts generated
+✔ Definition for file: components/infinite-scroll/index.ts generated
+✔ Definition for file: components/image-viewer/index.ts generated
+✔ Definition for file: components/input/index.ts generated
+✔ Definition for file: components/input-number/index.ts generated
+✔ Definition for file: components/link/index.ts generated
+✔ Definition for file: components/loading/index.ts generated
+✔ Definition for file: components/menu/index.ts generated
+✔ Definition for file: components/message/index.ts generated
+✔ Definition for file: components/backtop/index.ts generated
+✔ Definition for file: components/notification/index.ts generated
+✔ Definition for file: components/avatar/index.ts generated
+✔ Definition for file: components/page-header/index.ts generated
+✔ Definition for file: components/pagination/index.ts generated
+✔ Definition for file: components/popconfirm/index.ts generated
+✔ Definition for file: components/popover/index.ts generated
+✔ Definition for file: components/popper/index.ts generated
+✔ Definition for file: components/progress/index.ts generated
+✔ Definition for file: components/radio/index.ts generated
+✔ Definition for file: components/rate/index.ts generated
+✔ Definition for file: components/overlay/index.ts generated
+✔ Definition for file: components/message-box/index.ts generated
+✔ Definition for file: components/result/index.ts generated
+✔ Definition for file: components/row/index.ts generated
+✔ Definition for file: components/skeleton/index.ts generated
+✔ Definition for file: components/slot/index.ts generated
+✔ Definition for file: components/space/index.ts generated
+✔ Definition for file: components/steps/index.ts generated
+✔ Definition for file: components/switch/index.ts generated
+✔ Definition for file: components/table/index.ts generated
+✔ Definition for file: components/table-v2/index.ts generated
+✔ Definition for file: components/tabs/index.ts generated
+✔ Definition for file: components/tag/index.ts generated
+✔ Definition for file: components/teleport/index.ts generated
+✔ Definition for file: components/time-picker/index.ts generated
+✔ Definition for file: components/timeline/index.ts generated
+✔ Definition for file: components/tooltip/index.ts generated
+✔ Definition for file: components/tooltip-v2/index.ts generated
+✔ Definition for file: components/transfer/index.ts generated
+✔ Definition for file: components/tree/index.ts generated
+✔ Definition for file: components/tree-select/index.ts generated
+✔ Definition for file: components/tree-v2/index.ts generated
+✔ Definition for file: components/upload/index.ts generated
+✔ Definition for file: components/virtual-list/index.ts generated
+✔ Definition for file: components/visual-hidden/index.ts generated
+✔ Definition for file: hooks/use-attrs/index.ts generated
+✔ Definition for file: hooks/use-common-props/index.ts generated
+✔ Definition for file: hooks/use-cursor/index.ts generated
+✔ Definition for file: hooks/use-delayed-toggle/index.ts generated
+✔ Definition for file: hooks/use-deprecated/index.ts generated
+✔ Definition for file: hooks/use-draggable/index.ts generated
+✔ Definition for file: hooks/use-escape-keydown/index.ts generated
+✔ Definition for file: hooks/use-floating/index.ts generated
+✔ Definition for file: hooks/use-focus/index.ts generated
+✔ Definition for file: hooks/use-form-item/index.ts generated
+✔ Definition for file: hooks/use-forward-ref/index.ts generated
+✔ Definition for file: hooks/use-global-config/index.ts generated
+✔ Definition for file: hooks/use-id/index.ts generated
+✔ Definition for file: hooks/use-intermediate-render/index.ts generated
+✔ Definition for file: hooks/use-locale/index.ts generated
+✔ Definition for file: hooks/use-lockscreen/index.ts generated
+✔ Definition for file: hooks/use-modal/index.ts generated
+✔ Definition for file: hooks/use-model-toggle/index.ts generated
+✔ Definition for file: hooks/use-namespace/index.ts generated
+✔ Definition for file: hooks/use-popper-container/index.ts generated
+✔ Definition for file: hooks/use-prevent-global/index.ts generated
+✔ Definition for file: hooks/use-prop/index.ts generated
+✔ Definition for file: hooks/use-restore-active/index.ts generated
+✔ Definition for file: hooks/use-same-target/index.ts generated
+✔ Definition for file: hooks/use-teleport/index.ts generated
+✔ Definition for file: hooks/use-throttle-render/index.ts generated
+✔ Definition for file: hooks/use-timeout/index.ts generated
+✔ Definition for file: hooks/use-transition-fallthrough/index.ts generated
+✔ Definition for file: hooks/use-z-index/index.ts generated
+✔ Definition for file: locale/lang/af.ts generated
+✔ Definition for file: locale/lang/ar.ts generated
+✔ Definition for file: locale/lang/az.ts generated
+✔ Definition for file: locale/lang/bg.ts generated
+✔ Definition for file: locale/lang/bn.ts generated
+✔ Definition for file: locale/lang/ca.ts generated
+✔ Definition for file: locale/lang/cs.ts generated
+✔ Definition for file: locale/lang/da.ts generated
+✔ Definition for file: locale/lang/de.ts generated
+✔ Definition for file: locale/lang/en.ts generated
+✔ Definition for file: locale/lang/el.ts generated
+✔ Definition for file: locale/lang/eo.ts generated
+✔ Definition for file: locale/lang/es.ts generated
+✔ Definition for file: locale/lang/et.ts generated
+✔ Definition for file: locale/lang/eu.ts generated
+✔ Definition for file: locale/lang/fa.ts generated
+✔ Definition for file: locale/lang/fi.ts generated
+✔ Definition for file: components/roving-focus-group/index.ts generated
+✔ Definition for file: components/scrollbar/index.ts generated
+✔ Definition for file: locale/lang/fr.ts generated
+✔ Definition for file: locale/lang/he.ts generated
+✔ Definition for file: locale/lang/hr.ts generated
+✔ Definition for file: locale/lang/hu.ts generated
+✔ Definition for file: locale/lang/hy-am.ts generated
+✔ Definition for file: locale/lang/id.ts generated
+✔ Definition for file: locale/lang/it.ts generated
+✔ Definition for file: locale/lang/ja.ts generated
+✔ Definition for file: locale/lang/kk.ts generated
+✔ Definition for file: locale/lang/km.ts generated
+✔ Definition for file: locale/lang/ko.ts generated
+✔ Definition for file: locale/lang/ku.ts generated
+✔ Definition for file: locale/lang/ky.ts generated
+✔ Definition for file: locale/lang/lt.ts generated
+✔ Definition for file: locale/lang/lv.ts generated
+✔ Definition for file: locale/lang/mg.ts generated
+✔ Definition for file: locale/lang/mn.ts generated
+✔ Definition for file: locale/lang/nb-no.ts generated
+✔ Definition for file: locale/lang/nl.ts generated
+✔ Definition for file: locale/lang/pa.ts generated
+✔ Definition for file: locale/lang/pl.ts generated
+✔ Definition for file: locale/lang/pt-br.ts generated
+✔ Definition for file: locale/lang/pt.ts generated
+✔ Definition for file: locale/lang/ro.ts generated
+✔ Definition for file: locale/lang/sk.ts generated
+✔ Definition for file: locale/lang/sr.ts generated
+✔ Definition for file: locale/lang/sv.ts generated
+✔ Definition for file: locale/lang/ta.ts generated
+✔ Definition for file: locale/lang/th.ts generated
+✔ Definition for file: locale/lang/ru.ts generated
+✔ Definition for file: locale/lang/sl.ts generated
+✔ Definition for file: locale/lang/tk.ts generated
+✔ Definition for file: locale/lang/tr.ts generated
+✔ Definition for file: locale/lang/ug-cn.ts generated
+✔ Definition for file: locale/lang/uk.ts generated
+✔ Definition for file: locale/lang/uz-uz.ts generated
+✔ Definition for file: locale/lang/vi.ts generated
+✔ Definition for file: locale/lang/zh-cn.ts generated
+✔ Definition for file: locale/lang/zh-tw.ts generated
+✔ Definition for file: utils/dom/aria.ts generated
+✔ Definition for file: utils/dom/event.ts generated
+✔ Definition for file: utils/dom/index.ts generated
+✔ Definition for file: utils/dom/position.ts generated
+✔ Definition for file: utils/dom/scroll.ts generated
+✔ Definition for file: utils/dom/style.ts generated
+✔ Definition for file: utils/vue/global-node.ts generated
+✔ Definition for file: utils/vue/icon.ts generated
+✔ Definition for file: utils/vue/index.ts generated
+✔ Definition for file: utils/vue/install.ts generated
+✔ Definition for file: utils/vue/refs.ts generated
+✔ Definition for file: utils/vue/size.ts generated
+✔ Definition for file: utils/vue/typescript.ts generated
+✔ Definition for file: utils/vue/validator.ts generated
+✔ Definition for file: utils/vue/vnode.ts generated
+✔ Definition for file: components/affix/src/affix.ts generated
+✔ Definition for file: components/affix/style/css.ts generated
+✔ Definition for file: components/affix/style/index.ts generated
+✔ Definition for file: components/alert/src/alert.ts generated
+✔ Definition for file: components/alert/style/css.ts generated
+✔ Definition for file: components/alert/style/index.ts generated
+✔ Definition for file: components/aside/style/css.ts generated
+✔ Definition for file: components/aside/style/index.ts generated
+✔ Definition for file: components/autocomplete/src/autocomplete.ts generated
+✔ Definition for file: components/autocomplete/style/css.ts generated
+✔ Definition for file: components/autocomplete/style/index.ts generated
+✔ Definition for file: components/avatar/src/avatar.ts generated
+✔ Definition for file: components/avatar/style/css.ts generated
+✔ Definition for file: components/avatar/style/index.ts generated
+✔ Definition for file: components/backtop/src/backtop.ts generated
+✔ Definition for file: components/backtop/style/css.ts generated
+✔ Definition for file: components/backtop/style/index.ts generated
+✔ Definition for file: components/badge/src/badge.ts generated
+✔ Definition for file: components/badge/style/css.ts generated
+✔ Definition for file: components/badge/style/index.ts generated
+✔ Definition for file: components/breadcrumb/src/breadcrumb.ts generated
+✔ Definition for file: components/base/style/css.ts generated
+✔ Definition for file: components/base/style/index.ts generated
+✔ Definition for file: components/breadcrumb/src/breadcrumb-item.ts generated
+✔ Definition for file: components/breadcrumb/style/css.ts generated
+✔ Definition for file: components/breadcrumb/style/index.ts generated
+✔ Definition for file: components/breadcrumb-item/style/css.ts generated
+✔ Definition for file: components/breadcrumb-item/style/index.ts generated
+✔ Definition for file: components/button/src/button-custom.ts generated
+✔ Definition for file: components/button/src/button-group.ts generated
+✔ Definition for file: components/button/src/button.ts generated
+✔ Definition for file: components/button/style/css.ts generated
+✔ Definition for file: components/button/style/index.ts generated
+✔ Definition for file: components/button-group/style/css.ts generated
+✔ Definition for file: components/button-group/style/index.ts generated
+✔ Definition for file: components/calendar/src/calendar.ts generated
+✔ Definition for file: components/calendar/src/date-table.ts generated
+✔ Definition for file: components/calendar/style/css.ts generated
+✔ Definition for file: components/calendar/style/index.ts generated
+✔ Definition for file: components/card/src/card.ts generated
+✔ Definition for file: components/card/style/css.ts generated
+✔ Definition for file: components/card/style/index.ts generated
+✔ Definition for file: components/carousel/src/carousel-item.ts generated
+✔ Definition for file: components/carousel/src/carousel.ts generated
+✔ Definition for file: components/carousel/style/css.ts generated
+✔ Definition for file: components/carousel/style/index.ts generated
+✔ Definition for file: components/carousel-item/style/css.ts generated
+✔ Definition for file: components/carousel-item/style/index.ts generated
+✔ Definition for file: components/cascader/style/css.ts generated
+✔ Definition for file: components/cascader/style/index.ts generated
+✔ Definition for file: components/cascader-panel/src/config.ts generated
+✔ Definition for file: components/cascader-panel/src/node-content.ts generated
+✔ Definition for file: components/cascader-panel/src/node.ts generated
+✔ Definition for file: components/cascader-panel/src/store.ts generated
+✔ Definition for file: components/cascader-panel/src/types.ts generated
+✔ Definition for file: components/cascader-panel/src/utils.ts generated
+✔ Definition for file: components/cascader-panel/style/css.ts generated
+✔ Definition for file: components/cascader-panel/style/index.ts generated
+✔ Definition for file: components/check-tag/src/check-tag.ts generated
+✔ Definition for file: components/check-tag/style/css.ts generated
+✔ Definition for file: components/check-tag/style/index.ts generated
+✔ Definition for file: components/checkbox/src/checkbox.ts generated
+✔ Definition for file: components/checkbox/src/checkbox.type.ts generated
+✔ Definition for file: components/checkbox/style/css.ts generated
+✔ Definition for file: components/checkbox/style/index.ts generated
+✔ Definition for file: components/checkbox-button/style/css.ts generated
+✔ Definition for file: components/checkbox-button/style/index.ts generated
+✔ Definition for file: components/checkbox-group/style/css.ts generated
+✔ Definition for file: components/checkbox-group/style/index.ts generated
+✔ Definition for file: components/col/src/col.ts generated
+✔ Definition for file: components/col/style/css.ts generated
+✔ Definition for file: components/col/style/index.ts generated
+✔ Definition for file: components/collapse/src/collapse-item.ts generated
+✔ Definition for file: components/collapse/src/collapse.ts generated
+✔ Definition for file: components/collapse/style/css.ts generated
+✔ Definition for file: components/collapse/style/index.ts generated
+✔ Definition for file: components/collapse-item/style/css.ts generated
+✔ Definition for file: components/collapse-item/style/index.ts generated
+✔ Definition for file: components/collapse-transition/style/css.ts generated
+✔ Definition for file: components/collapse-transition/style/index.ts generated
+✔ Definition for file: components/collection/src/collection.ts generated
+✔ Definition for file: components/collection/src/tokens.ts generated
+✔ Definition for file: components/color-picker/src/color.ts generated
+✔ Definition for file: components/color-picker/src/draggable.ts generated
+✔ Definition for file: components/color-picker/src/useOption.ts generated
+✔ Definition for file: components/color-picker/style/css.ts generated
+✔ Definition for file: components/color-picker/style/index.ts generated
+✔ Definition for file: components/config-provider/src/config-provider.ts generated
+✔ Definition for file: components/config-provider/style/css.ts generated
+✔ Definition for file: components/config-provider/style/index.ts generated
+✔ Definition for file: components/container/style/css.ts generated
+✔ Definition for file: components/container/style/index.ts generated
+✔ Definition for file: components/date-picker/src/date-picker.tsx generated
+✔ Definition for file: components/date-picker/src/date-picker.type.ts generated
+✔ Definition for file: components/date-picker/src/utils.ts generated
+✔ Definition for file: components/date-picker/style/css.ts generated
+✔ Definition for file: components/date-picker/style/index.ts generated
+✔ Definition for file: components/descriptions/src/description-item.ts generated
+✔ Definition for file: components/descriptions/src/description.ts generated
+✔ Definition for file: components/descriptions/src/descriptions-cell.ts generated
+✔ Definition for file: components/descriptions/src/descriptions-row.ts generated
+✔ Definition for file: components/descriptions/src/descriptions.type.ts generated
+✔ Definition for file: components/descriptions/src/token.ts generated
+✔ Definition for file: components/descriptions/style/css.ts generated
+✔ Definition for file: components/descriptions/style/index.ts generated
+✔ Definition for file: components/descriptions-item/style/css.ts generated
+✔ Definition for file: components/descriptions-item/style/index.ts generated
+✔ Definition for file: components/dialog/src/dialog-content.ts generated
+✔ Definition for file: components/dialog/src/dialog.ts generated
+✔ Definition for file: components/dialog/src/use-dialog.ts generated
+✔ Definition for file: components/dialog/style/css.ts generated
+✔ Definition for file: components/dialog/style/index.ts generated
+✔ Definition for file: components/divider/style/css.ts generated
+✔ Definition for file: components/divider/src/divider.ts generated
+✔ Definition for file: components/divider/style/index.ts generated
+✔ Definition for file: components/drawer/src/drawer.ts generated
+✔ Definition for file: components/drawer/style/index.ts generated
+✔ Definition for file: components/dropdown/src/dropdown.ts generated
+✔ Definition for file: components/dropdown/src/tokens.ts generated
+✔ Definition for file: components/drawer/style/css.ts generated
+✔ Definition for file: components/dropdown/src/useDropdown.ts generated
+✔ Definition for file: components/dropdown/style/css.ts generated
+✔ Definition for file: components/dropdown/style/index.ts generated
+✔ Definition for file: components/dropdown-item/style/css.ts generated
+✔ Definition for file: components/dropdown-item/style/index.ts generated
+✔ Definition for file: components/dropdown-menu/style/css.ts generated
+✔ Definition for file: components/dropdown-menu/style/index.ts generated
+✔ Definition for file: components/empty/src/empty.ts generated
+✔ Definition for file: components/empty/style/css.ts generated
+✔ Definition for file: components/empty/style/index.ts generated
+✔ Definition for file: components/focus-trap/src/tokens.ts generated
+✔ Definition for file: components/focus-trap/src/utils.ts generated
+✔ Definition for file: components/footer/style/css.ts generated
+✔ Definition for file: components/footer/style/index.ts generated
+✔ Definition for file: components/form/src/form-item.ts generated
+✔ Definition for file: components/form/src/form-label-wrap.tsx generated
+✔ Definition for file: components/form/src/form.ts generated
+✔ Definition for file: components/form/src/types.ts generated
+✔ Definition for file: components/form/src/utils.ts generated
+✔ Definition for file: components/form/style/css.ts generated
+✔ Definition for file: components/form/style/index.ts generated
+✔ Definition for file: components/form-item/style/css.ts generated
+✔ Definition for file: components/form-item/style/index.ts generated
+✔ Definition for file: components/header/style/css.ts generated
+✔ Definition for file: components/header/style/index.ts generated
+✔ Definition for file: components/icon/src/icon.ts generated
+✔ Definition for file: components/icon/style/css.ts generated
+✔ Definition for file: components/icon/style/index.ts generated
+✔ Definition for file: components/image/src/image.ts generated
+✔ Definition for file: components/image/style/css.ts generated
+✔ Definition for file: components/image/style/index.ts generated
+✔ Definition for file: components/image-viewer/src/image-viewer.ts generated
+✔ Definition for file: components/image-viewer/style/css.ts generated
+✔ Definition for file: components/image-viewer/style/index.ts generated
+✔ Definition for file: components/infinite-scroll/src/index.ts generated
+✔ Definition for file: components/infinite-scroll/style/css.ts generated
+✔ Definition for file: components/infinite-scroll/style/index.ts generated
+✔ Definition for file: components/input/src/input.ts generated
+✔ Definition for file: components/input/src/utils.ts generated
+✔ Definition for file: components/input/style/css.ts generated
+✔ Definition for file: components/input/style/index.ts generated
+✔ Definition for file: components/input-number/src/input-number.ts generated
+✔ Definition for file: components/input-number/style/css.ts generated
+✔ Definition for file: components/input-number/style/index.ts generated
+✔ Definition for file: components/link/style/css.ts generated
+✔ Definition for file: components/link/src/link.ts generated
+✔ Definition for file: components/link/style/index.ts generated
+✔ Definition for file: components/loading/src/directive.ts generated
+✔ Definition for file: components/loading/src/loading.ts generated
+✔ Definition for file: components/loading/src/service.ts generated
+✔ Definition for file: components/loading/src/types.ts generated
+✔ Definition for file: components/loading/style/css.ts generated
+✔ Definition for file: components/loading/style/index.ts generated
+✔ Definition for file: components/main/style/css.ts generated
+✔ Definition for file: components/main/style/index.ts generated
+✔ Definition for file: components/menu/src/menu-item-group.ts generated
+✔ Definition for file: components/menu/src/menu-item.ts generated
+✔ Definition for file: components/menu/src/menu.ts generated
+✔ Definition for file: components/menu/src/sub-menu.ts generated
+✔ Definition for file: components/menu/src/types.ts generated
+✔ Definition for file: components/menu/src/use-menu-color.ts generated
+✔ Definition for file: components/menu/src/use-menu-css-var.ts generated
+✔ Definition for file: components/menu/src/use-menu.ts generated
+✔ Definition for file: components/menu/style/css.ts generated
+✔ Definition for file: components/menu/style/index.ts generated
+✔ Definition for file: components/menu-item/style/css.ts generated
+✔ Definition for file: components/menu-item/style/index.ts generated
+✔ Definition for file: components/menu-item-group/style/css.ts generated
+✔ Definition for file: components/menu-item-group/style/index.ts generated
+✔ Definition for file: components/message/src/instance.ts generated
+✔ Definition for file: components/message/src/message.ts generated
+✔ Definition for file: components/message/src/method.ts generated
+✔ Definition for file: components/message/style/css.ts generated
+✔ Definition for file: components/message/style/index.ts generated
+✔ Definition for file: components/message-box/src/message-box.type.ts generated
+✔ Definition for file: components/message-box/src/messageBox.ts generated
+✔ Definition for file: components/message-box/style/css.ts generated
+✔ Definition for file: components/message-box/style/index.ts generated
+✔ Definition for file: components/notification/src/notification.ts generated
+✔ Definition for file: components/notification/src/notify.ts generated
+✔ Definition for file: components/notification/style/css.ts generated
+✔ Definition for file: components/notification/style/index.ts generated
+✔ Definition for file: components/option/style/css.ts generated
+✔ Definition for file: components/option/style/index.ts generated
+✔ Definition for file: components/option-group/style/css.ts generated
+✔ Definition for file: components/option-group/style/index.ts generated
+✔ Definition for file: components/overlay/src/overlay.ts generated
+✔ Definition for file: components/overlay/style/css.ts generated
+✔ Definition for file: components/overlay/style/index.ts generated
+✔ Definition for file: components/page-header/src/page-header.ts generated
+✔ Definition for file: components/page-header/style/css.ts generated
+✔ Definition for file: components/page-header/style/index.ts generated
+✔ Definition for file: components/pagination/src/pagination.ts generated
+✔ Definition for file: components/pagination/src/usePagination.ts generated
+✔ Definition for file: components/pagination/style/css.ts generated
+✔ Definition for file: components/pagination/style/index.ts generated
+✔ Definition for file: components/popconfirm/src/popconfirm.ts generated
+✔ Definition for file: components/popconfirm/style/css.ts generated
+✔ Definition for file: components/popconfirm/style/index.ts generated
+✔ Definition for file: components/popover/src/directive.ts generated
+✔ Definition for file: components/popover/src/popover.ts generated
+✔ Definition for file: components/popover/style/css.ts generated
+✔ Definition for file: components/popover/style/index.ts generated
+✔ Definition for file: components/popper/src/arrow.ts generated
+✔ Definition for file: components/popper/src/container.ts generated
+✔ Definition for file: components/popper/src/content.ts generated
+✔ Definition for file: components/popper/src/popper.ts generated
+✔ Definition for file: components/popper/src/trigger.ts generated
+✔ Definition for file: components/popper/src/utils.ts generated
+✔ Definition for file: components/popper/style/css.ts generated
+✔ Definition for file: components/popper/style/index.ts generated
+✔ Definition for file: components/progress/src/progress.ts generated
+✔ Definition for file: components/progress/style/css.ts generated
+✔ Definition for file: components/progress/style/index.ts generated
+✔ Definition for file: components/radio/src/radio-button.ts generated
+✔ Definition for file: components/radio/src/radio-group.ts generated
+✔ Definition for file: components/radio/src/radio.ts generated
+✔ Definition for file: components/radio/src/use-radio.ts generated
+✔ Definition for file: components/radio/style/css.ts generated
+✔ Definition for file: components/radio/style/index.ts generated
+✔ Definition for file: components/radio-button/style/css.ts generated
+✔ Definition for file: components/radio-button/style/index.ts generated
+✔ Definition for file: components/radio-group/style/css.ts generated
+✔ Definition for file: components/radio-group/style/index.ts generated
+✔ Definition for file: components/rate/src/rate.ts generated
+✔ Definition for file: components/rate/style/css.ts generated
+✔ Definition for file: components/rate/style/index.ts generated
+✔ Definition for file: components/result/src/result.ts generated
+✔ Definition for file: components/result/style/css.ts generated
+✔ Definition for file: components/result/style/index.ts generated
+✔ Definition for file: components/roving-focus-group/src/tokens.ts generated
+✔ Definition for file: components/roving-focus-group/src/utils.ts generated
+✔ Definition for file: components/row/src/row.ts generated
+✔ Definition for file: components/row/style/css.ts generated
+✔ Definition for file: components/row/style/index.ts generated
+✔ Definition for file: components/scrollbar/src/bar.ts generated
+✔ Definition for file: components/scrollbar/src/scrollbar.ts generated
+✔ Definition for file: components/scrollbar/src/thumb.ts generated
+✔ Definition for file: components/scrollbar/src/util.ts generated
+✔ Definition for file: components/scrollbar/style/css.ts generated
+✔ Definition for file: components/scrollbar/style/index.ts generated
+✔ Definition for file: components/select/src/token.ts generated
+✔ Definition for file: components/select/src/useOption.ts generated
+✔ Definition for file: components/select-v2/src/defaults.ts generated
+✔ Definition for file: components/select/style/css.ts generated
+✔ Definition for file: components/select/style/index.ts generated
+✔ Definition for file: components/select-v2/src/select-dropdown.tsx generated
+✔ Definition for file: components/select-v2/src/select.types.ts generated
+✔ Definition for file: components/select-v2/src/token.ts generated
+✔ Definition for file: components/select-v2/src/useAllowCreate.ts generated
+✔ Definition for file: components/select-v2/src/useInput.ts generated
+✔ Definition for file: components/select-v2/src/useOption.ts generated
+✔ Definition for file: components/select-v2/style/css.ts generated
+✔ Definition for file: components/select-v2/style/index.ts generated
+✔ Definition for file: components/select-v2/src/util.ts generated
+✔ Definition for file: components/skeleton/src/skeleton-item.ts generated
+✔ Definition for file: components/skeleton/src/skeleton.ts generated
+✔ Definition for file: components/skeleton/style/css.ts generated
+✔ Definition for file: components/skeleton/style/index.ts generated
+✔ Definition for file: components/skeleton-item/style/css.ts generated
+✔ Definition for file: components/skeleton-item/style/index.ts generated
+✔ Definition for file: components/slider/src/button.ts generated
+✔ Definition for file: components/slider/src/marker.ts generated
+✔ Definition for file: components/slider/src/slider.ts generated
+✔ Definition for file: components/slider/style/css.ts generated
+✔ Definition for file: components/slider/style/index.ts generated
+✔ Definition for file: components/slot/src/only-child.tsx generated
+✔ Definition for file: components/space/src/item.ts generated
+✔ Definition for file: components/space/src/space.ts generated
+✔ Definition for file: components/space/src/use-space.ts generated
+✔ Definition for file: components/space/style/css.ts generated
+✔ Definition for file: components/space/style/index.ts generated
+✔ Definition for file: components/step/style/css.ts generated
+✔ Definition for file: components/step/style/index.ts generated
+✔ Definition for file: components/steps/src/item.ts generated
+✔ Definition for file: components/steps/src/steps.ts generated
+✔ Definition for file: components/steps/style/css.ts generated
+✔ Definition for file: components/steps/style/index.ts generated
+✔ Definition for file: components/sub-menu/style/css.ts generated
+✔ Definition for file: components/sub-menu/style/index.ts generated
+✔ Definition for file: components/switch/src/switch.ts generated
+✔ Definition for file: components/switch/style/css.ts generated
+✔ Definition for file: components/switch/style/index.ts generated
+✔ Definition for file: components/tab-pane/style/css.ts generated
+✔ Definition for file: components/tab-pane/style/index.ts generated
+✔ Definition for file: components/table/src/config.ts generated
+✔ Definition for file: components/table/src/h-helper.ts generated
+✔ Definition for file: components/table/src/layout-observer.ts generated
+✔ Definition for file: components/table/src/table-layout.ts generated
+✔ Definition for file: components/table/src/tableColumn.ts generated
+✔ Definition for file: components/table/src/tokens.ts generated
+✔ Definition for file: components/table/src/util.ts generated
+✔ Definition for file: components/table/style/css.ts generated
+✔ Definition for file: components/table/style/index.ts generated
+✔ Definition for file: components/table-column/style/css.ts generated
+✔ Definition for file: components/table-column/style/index.ts generated
+✔ Definition for file: components/table-v2/src/auto-resizer.ts generated
+✔ Definition for file: components/table-v2/src/cell.ts generated
+✔ Definition for file: components/table-v2/src/common.ts generated
+✔ Definition for file: components/table-v2/src/constants.ts generated
+✔ Definition for file: components/table-v2/src/grid.ts generated
+✔ Definition for file: components/table-v2/src/header-cell.ts generated
+✔ Definition for file: components/table-v2/src/header-row.ts generated
+✔ Definition for file: components/table-v2/src/header.ts generated
+✔ Definition for file: components/table-v2/src/private.ts generated
+✔ Definition for file: components/table-v2/src/row.ts generated
+✔ Definition for file: components/table-v2/src/table-grid.tsx generated
+✔ Definition for file: components/table-v2/src/table-v2.tsx generated
+✔ Definition for file: components/table-v2/src/table.ts generated
+✔ Definition for file: components/table-v2/src/tokens.ts generated
+✔ Definition for file: components/table-v2/src/types.ts generated
+✔ Definition for file: components/table-v2/src/use-table.ts generated
+✔ Definition for file: components/table-v2/src/utils.ts generated
+✔ Definition for file: components/table-v2/style/css.ts generated
+✔ Definition for file: components/table-v2/style/index.ts generated
+✔ Definition for file: components/tabs/src/tab-bar.ts generated
+✔ Definition for file: components/tabs/src/tab-nav.tsx generated
+✔ Definition for file: components/tabs/src/tab-pane.ts generated
+✔ Definition for file: components/tabs/src/tabs.tsx generated
+✔ Definition for file: components/tabs/style/css.ts generated
+✔ Definition for file: components/tabs/style/index.ts generated
+✔ Definition for file: components/tag/src/tag.ts generated
+✔ Definition for file: components/tag/style/css.ts generated
+✔ Definition for file: components/tag/style/index.ts generated
+✔ Definition for file: components/teleport/src/teleport.ts generated
+✔ Definition for file: components/teleport/style/css.ts generated
+✔ Definition for file: components/teleport/style/index.ts generated
+✔ Definition for file: components/time-picker/src/constants.ts generated
+✔ Definition for file: components/time-picker/src/time-picker.tsx generated
+✔ Definition for file: components/time-picker/src/types.ts generated
+✔ Definition for file: components/time-picker/src/utils.ts generated
+✔ Definition for file: components/time-picker/style/css.ts generated
+✔ Definition for file: components/time-picker/style/index.ts generated
+✔ Definition for file: components/time-select/src/time-select.ts generated
+✔ Definition for file: components/time-select/src/utils.ts generated
+✔ Definition for file: components/time-select/style/css.ts generated
+✔ Definition for file: components/time-select/style/index.ts generated
+✔ Definition for file: components/timeline/src/timeline-item.ts generated
+✔ Definition for file: components/timeline/src/timeline.ts generated
+✔ Definition for file: components/timeline/style/css.ts generated
+✔ Definition for file: components/timeline/style/index.ts generated
+✔ Definition for file: components/timeline-item/style/css.ts generated
+✔ Definition for file: components/timeline-item/style/index.ts generated
+✔ Definition for file: components/tooltip/src/tokens.ts generated
+✔ Definition for file: components/tooltip/src/tooltip.ts generated
+✔ Definition for file: components/tooltip/src/utils.ts generated
+✔ Definition for file: components/tooltip/style/css.ts generated
+✔ Definition for file: components/tooltip/style/index.ts generated
+✔ Definition for file: components/tooltip-v2/src/arrow.ts generated
+✔ Definition for file: components/tooltip-v2/src/common.ts generated
+✔ Definition for file: components/tooltip-v2/src/content.ts generated
+✔ Definition for file: components/tooltip-v2/src/forward-ref.tsx generated
+✔ Definition for file: components/tooltip-v2/src/root.ts generated
+✔ Definition for file: components/tooltip-v2/src/tooltip.ts generated
+✔ Definition for file: components/tooltip-v2/src/trigger.ts generated
+✔ Definition for file: components/transfer/src/transfer-panel.ts generated
+✔ Definition for file: components/transfer/src/transfer.ts generated
+✔ Definition for file: components/transfer/style/css.ts generated
+✔ Definition for file: components/transfer/style/index.ts generated
+✔ Definition for file: components/tree/src/tree.type.ts generated
+✔ Definition for file: components/tree/style/css.ts generated
+✔ Definition for file: components/tree/style/index.ts generated
+✔ Definition for file: components/tree-select/src/select.ts generated
+✔ Definition for file: components/tree-select/src/tree-select-option.ts generated
+✔ Definition for file: components/tree-select/src/tree.ts generated
+✔ Definition for file: components/tree-select/src/utils.ts generated
+✔ Definition for file: components/tree-select/style/css.ts generated
+✔ Definition for file: components/tree-select/style/index.ts generated
+✔ Definition for file: components/tree-v2/src/tree-node-content.ts generated
+✔ Definition for file: components/tree-v2/src/types.ts generated
+✔ Definition for file: components/tree-v2/src/virtual-tree.ts generated
+✔ Definition for file: components/tree-v2/style/css.ts generated
+✔ Definition for file: components/tree-v2/style/index.ts generated
+✔ Definition for file: components/upload/src/upload-content.ts generated
+✔ Definition for file: components/upload/src/upload-dragger.ts generated
+✔ Definition for file: components/upload/src/ajax.ts generated
+✔ Definition for file: components/upload/src/upload-list.ts generated
+✔ Definition for file: components/upload/style/css.ts generated
+✔ Definition for file: components/upload/src/use-handlers.ts generated
+✔ Definition for file: components/upload/style/index.ts generated
+✔ Definition for file: components/virtual-list/src/defaults.ts generated
+✔ Definition for file: components/virtual-list/src/utils.ts generated
+✔ Definition for file: components/virtual-list/style/css.ts generated
+✔ Definition for file: components/virtual-list/src/props.ts generated
+✔ Definition for file: components/virtual-list/src/types.ts generated
+✔ Definition for file: components/virtual-list/style/index.ts generated
+✔ Definition for file: components/visual-hidden/src/visual-hidden.ts generated
+✔ Definition for file: utils/vue/props/index.ts generated
+✔ Definition for file: utils/vue/props/runtime.ts generated
+✔ Definition for file: utils/vue/props/types.ts generated
+✔ Definition for file: components/date-picker/src/composables/use-month-range-header.ts generated
+✔ Definition for file: utils/vue/props/util.ts generated
+✔ Definition for file: components/date-picker/src/composables/use-range-picker.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/basic-cell-render.tsx generated
+✔ Definition for file: components/date-picker/src/composables/use-shortcut.ts generated
+✔ Definition for file: components/date-picker/src/props/basic-date-table.ts generated
+✔ Definition for file: components/date-picker/src/props/basic-cell.ts generated
+✔ Definition for file: components/date-picker/src/props/basic-year-table.ts generated
+✔ Definition for file: components/date-picker/src/props/date-picker.ts generated
+✔ Definition for file: components/date-picker/src/props/basic-month-table.ts generated
+✔ Definition for file: components/date-picker/src/props/panel-date-pick.ts generated
+✔ Definition for file: components/date-picker/src/props/panel-month-range.ts generated
+✔ Definition for file: components/date-picker/src/props/shared.ts generated
+✔ Definition for file: components/menu/src/utils/menu-item.ts generated
+✔ Definition for file: components/menu/src/utils/menu-bar.ts generated
+✔ Definition for file: components/date-picker/src/props/panel-date-range.ts generated
+✔ Definition for file: components/pagination/src/components/prev.ts generated
+✔ Definition for file: components/menu/src/utils/submenu.ts generated
+✔ Definition for file: components/pagination/src/components/next.ts generated
+✔ Definition for file: components/pagination/src/components/total.ts generated
+✔ Definition for file: components/pagination/src/components/sizes.ts generated
+✔ Definition for file: components/slider/src/composables/index.ts generated
+✔ Definition for file: components/slider/src/composables/use-lifecycle.ts generated
+✔ Definition for file: components/slider/src/composables/use-marks.ts generated
+✔ Definition for file: components/pagination/src/components/pager.ts generated
+✔ Definition for file: components/slider/src/composables/use-stops.ts generated
+✔ Definition for file: components/slider/src/composables/use-watch.ts generated
+✔ Definition for file: components/slider/src/composables/use-slider-button.ts generated
+✔ Definition for file: components/table/src/store/current.ts generated
+✔ Definition for file: components/table/src/composables/use-scrollbar.ts generated
+✔ Definition for file: components/table/src/store/helper.ts generated
+✔ Definition for file: components/table/src/store/index.ts generated
+✔ Definition for file: components/table/src/store/expand.ts generated
+✔ Definition for file: components/table/src/store/watcher.ts generated
+✔ Definition for file: components/table/src/table/defaults.ts generated
+✔ Definition for file: components/table/src/table/utils-helper.ts generated
+✔ Definition for file: components/table/src/table-body/defaults.ts generated
+✔ Definition for file: components/table/src/table/style-helper.ts generated
+✔ Definition for file: components/table/src/table-body/index.ts generated
+✔ Definition for file: components/table/src/store/tree.ts generated
+✔ Definition for file: components/table/src/table-body/events-helper.ts generated
+✔ Definition for file: components/table/src/table-body/styles-helper.ts generated
+✔ Definition for file: components/table/src/table-body/render-helper.ts generated
+✔ Definition for file: components/table/src/table-column/index.ts generated
+✔ Definition for file: components/table/src/table-column/defaults.ts generated
+✔ Definition for file: components/table/src/table-column/render-helper.ts generated
+✔ Definition for file: components/table/src/table-footer/mapState-helper.ts generated
+✔ Definition for file: components/table/src/table-column/watcher-helper.ts generated
+✔ Definition for file: components/table/src/table-footer/index.ts generated
+✔ Definition for file: components/table/src/table-footer/style-helper.ts generated
+✔ Definition for file: components/table/src/table-header/index.ts generated
+✔ Definition for file: components/table/src/table-header/event-helper.ts generated
+✔ Definition for file: components/table/src/table-header/utils-helper.ts generated
+✔ Definition for file: components/table-v2/src/components/auto-resizer.tsx generated
+✔ Definition for file: components/table-v2/src/components/cell.tsx generated
+✔ Definition for file: components/table-v2/src/components/expand-icon.tsx generated
+✔ Definition for file: components/table-v2/src/components/header-row.tsx generated
+✔ Definition for file: components/table-v2/src/components/header-cell.tsx generated
+✔ Definition for file: components/table-v2/src/components/header.tsx generated
+✔ Definition for file: components/table/src/table-header/style.helper.ts generated
+✔ Definition for file: components/table-v2/src/components/row.tsx generated
+✔ Definition for file: components/table-v2/src/components/index.ts generated
+✔ Definition for file: components/table-v2/src/components/sort-icon.tsx generated
+✔ Definition for file: components/table-v2/src/composables/index.ts generated
+✔ Definition for file: components/table-v2/src/composables/use-auto-resize.ts generated
+✔ Definition for file: components/table-v2/src/composables/use-columns.ts generated
+✔ Definition for file: components/table-v2/src/composables/use-styles.ts generated
+✔ Definition for file: components/table-v2/src/composables/use-data.ts generated
+✔ Definition for file: components/table-v2/src/composables/use-row.ts generated
+✔ Definition for file: components/table-v2/src/composables/utils.ts generated
+✔ Definition for file: components/table-v2/src/composables/use-scrollbar.ts generated
+✔ Definition for file: components/table-v2/src/renderers/empty.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/footer.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/header-cell.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/cell.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/left-table.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/main-table.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/right-table.tsx generated
+✔ Definition for file: components/table-v2/src/renderers/row.tsx generated
+✔ Definition for file: components/time-picker/src/common/props.ts generated
+✔ Definition for file: components/time-picker/src/composables/use-time-panel.ts generated
+✔ Definition for file: components/time-picker/src/composables/use-time-picker.ts generated
+✔ Definition for file: components/time-picker/src/props/basic-time-spinner.ts generated
+✔ Definition for file: components/table-v2/src/renderers/overlay.tsx generated
+✔ Definition for file: components/time-picker/src/props/shared.ts generated
+✔ Definition for file: components/time-picker/src/props/panel-time-picker.ts generated
+✔ Definition for file: components/time-picker/src/props/panel-time-range.ts generated
+✔ Definition for file: components/transfer/src/composables/index.ts generated
+✔ Definition for file: components/transfer/src/composables/use-check.ts generated
+✔ Definition for file: components/transfer/src/composables/use-checked-change.ts generated
+✔ Definition for file: components/transfer/src/composables/use-move.ts generated
+✔ Definition for file: components/table-v2/src/renderers/header.tsx generated
+✔ Definition for file: components/transfer/src/composables/use-props-alias.ts generated
+✔ Definition for file: components/tree/src/model/node.ts generated
+✔ Definition for file: components/transfer/src/composables/use-computed-data.ts generated
+✔ Definition for file: components/tree/src/model/useDragNode.ts generated
+✔ Definition for file: components/tree/src/model/useKeydown.ts generated
+✔ Definition for file: components/tree/src/model/useNodeExpandEventBroadcast.ts generated
+✔ Definition for file: components/tree/src/model/util.ts generated
+✔ Definition for file: components/tree-v2/src/composables/useCheck.ts generated
+✔ Definition for file: components/tree/src/model/tree-store.ts generated
+✔ Definition for file: components/tree-v2/src/composables/useFilter.ts generated
+✔ Definition for file: components/virtual-list/src/builders/build-grid.ts generated
+✔ Definition for file: components/virtual-list/src/components/dynamic-size-list.ts generated
+✔ Definition for file: components/virtual-list/src/components/dynamic-size-grid.ts generated
+✔ Definition for file: components/tree-v2/src/composables/useTree.ts generated
+✔ Definition for file: components/virtual-list/src/components/fixed-size-grid.ts generated
+✔ Definition for file: components/virtual-list/src/components/fixed-size-list.ts generated
+✔ Definition for file: components/virtual-list/src/hooks/use-cache.ts generated
+✔ Definition for file: components/virtual-list/src/components/scrollbar.ts generated
+✔ Definition for file: components/virtual-list/src/hooks/use-grid-wheel.ts generated
+✔ Definition for file: components/virtual-list/src/builders/build-list.ts generated
+✔ Definition for file: components/virtual-list/src/hooks/use-wheel.ts generated
+✔ Definition for file: components/affix/src/affix.vue.ts generated
+✔ Definition for file: components/avatar/src/avatar.vue.ts generated
+✔ Definition for file: components/autocomplete/src/autocomplete.vue.ts generated
+✔ Definition for file: components/alert/src/alert.vue.ts generated
+✔ Definition for file: components/badge/src/badge.vue.ts generated
+✔ Definition for file: components/breadcrumb/src/breadcrumb.vue.ts generated
+✔ Definition for file: components/button/src/button.vue.ts generated
+✔ Definition for file: components/backtop/src/backtop.vue.ts generated
+✔ Definition for file: components/button/src/button-group.vue.ts generated
+✔ Definition for file: components/calendar/src/calendar.vue.ts generated
+✔ Definition for file: components/carousel/src/carousel-item.vue.ts generated
+✔ Definition for file: components/calendar/src/date-table.vue.ts generated
+✔ Definition for file: components/carousel/src/carousel.vue.ts generated
+✔ Definition for file: components/breadcrumb/src/breadcrumb-item.vue.ts generated
+✔ Definition for file: components/card/src/card.vue.ts generated
+✔ Definition for file: components/cascader-panel/src/index.vue.ts generated
+✔ Definition for file: components/cascader-panel/src/menu.vue.ts generated
+✔ Definition for file: components/cascader-panel/src/node.vue.ts generated
+✔ Definition for file: components/check-tag/src/check-tag.vue.ts generated
+✔ Definition for file: components/checkbox/src/checkbox-group.vue.ts generated
+✔ Definition for file: components/checkbox/src/checkbox.vue.ts generated
+✔ Definition for file: components/col/src/col.vue.ts generated
+✔ Definition for file: components/collapse/src/collapse-item.vue.ts generated
+✔ Definition for file: components/collapse/src/collapse.vue.ts generated
+✔ Definition for file: components/collapse-transition/src/collapse-transition.vue.ts generated
+✔ Definition for file: components/collection/src/collection-item.vue.ts generated
+✔ Definition for file: components/color-picker/src/index.vue.ts generated
+✔ Definition for file: components/container/src/aside.vue.ts generated
+✔ Definition for file: components/collection/src/collection.vue.ts generated
+✔ Definition for file: components/container/src/container.vue.ts generated
+✔ Definition for file: components/container/src/header.vue.ts generated
+✔ Definition for file: components/container/src/footer.vue.ts generated
+✔ Definition for file: components/container/src/main.vue.ts generated
+✔ Definition for file: components/descriptions/src/description.vue.ts generated
+✔ Definition for file: components/dialog/src/dialog-content.vue.ts generated
+✔ Definition for file: components/dialog/src/dialog.vue.ts generated
+✔ Definition for file: components/descriptions/src/descriptions-row.vue.ts generated
+✔ Definition for file: components/drawer/src/drawer.vue.ts generated
+✔ Definition for file: components/divider/src/divider.vue.ts generated
+✔ Definition for file: components/dropdown/src/dropdown-item.vue.ts generated
+✔ Definition for file: components/dropdown/src/dropdown-menu.vue.ts generated
+✔ Definition for file: components/dropdown/src/dropdown-item-impl.vue.ts generated
+✔ Definition for file: components/empty/src/empty.vue.ts generated
+✔ Definition for file: components/empty/src/img-empty.vue.ts generated
+✔ Definition for file: components/focus-trap/src/focus-trap.vue.ts generated
+✔ Definition for file: components/form/src/form-item.vue.ts generated
+✔ Definition for file: components/icon/src/icon.vue.ts generated
+✔ Definition for file: components/form/src/form.vue.ts generated
+✔ Definition for file: components/image/src/image.vue.ts generated
+✔ Definition for file: components/image-viewer/src/image-viewer.vue.ts generated
+✔ Definition for file: components/input-number/src/input-number.vue.ts generated
+✔ Definition for file: components/link/src/link.vue.ts generated
+✔ Definition for file: components/input/src/input.vue.ts generated
+✔ Definition for file: components/menu/src/menu-collapse-transition.vue.ts generated
+✔ Definition for file: components/menu/src/menu-item-group.vue.ts generated
+✔ Definition for file: components/menu/src/menu-item.vue.ts generated
+✔ Definition for file: components/message/src/message.vue.ts generated
+✔ Definition for file: components/page-header/src/page-header.vue.ts generated
+✔ Definition for file: components/popconfirm/src/popconfirm.vue.ts generated
+✔ Definition for file: components/message-box/src/index.vue.ts generated
+✔ Definition for file: components/popover/src/popover.vue.ts generated
+✔ Definition for file: components/notification/src/notification.vue.ts generated
+✔ Definition for file: components/popper/src/arrow.vue.ts generated
+✔ Definition for file: components/checkbox/src/checkbox-button.vue.ts generated
+✔ Definition for file: components/popper/src/content.vue.ts generated
+✔ Definition for file: components/popper/src/trigger.vue.ts generated
+✔ Definition for file: components/progress/src/progress.vue.ts generated
+✔ Definition for file: components/popper/src/popper.vue.ts generated
+✔ Definition for file: components/radio/src/radio-button.vue.ts generated
+✔ Definition for file: components/radio/src/radio-group.vue.ts generated
+✔ Definition for file: components/radio/src/radio.vue.ts generated
+✔ Definition for file: components/rate/src/rate.vue.ts generated
+✔ Definition for file: components/roving-focus-group/src/roving-focus-group-impl.vue.ts generated
+✔ Definition for file: components/result/src/result.vue.ts generated
+✔ Definition for file: components/roving-focus-group/src/roving-focus-group.vue.ts generated
+✔ Definition for file: components/roving-focus-group/src/roving-focus-item.vue.ts generated
+✔ Definition for file: components/row/src/row.vue.ts generated
+✔ Definition for file: components/select/src/option-group.vue.ts generated
+✔ Definition for file: components/select/src/option.vue.ts generated
+✔ Definition for file: components/scrollbar/src/scrollbar.vue.ts generated
+✔ Definition for file: components/scrollbar/src/bar.vue.ts generated
+✔ Definition for file: components/select/src/select-dropdown.vue.ts generated
+✔ Definition for file: components/scrollbar/src/thumb.vue.ts generated
+✔ Definition for file: components/skeleton/src/skeleton.vue.ts generated
+✔ Definition for file: components/select-v2/src/group-item.vue.ts generated
+✔ Definition for file: components/select-v2/src/option-item.vue.ts generated
+✔ Definition for file: components/skeleton/src/skeleton-item.vue.ts generated
+✔ Definition for file: components/slider/src/button.vue.ts generated
+✔ Definition for file: components/tabs/src/tab-bar.vue.ts generated
+✔ Definition for file: components/table/src/table.vue.ts generated
+✔ Definition for file: components/tabs/src/tab-pane.vue.ts generated
+✔ Definition for file: components/steps/src/steps.vue.ts generated
+✔ Definition for file: components/tag/src/tag.vue.ts generated
+✔ Definition for file: components/timeline/src/timeline-item.vue.ts generated
+✔ Definition for file: components/tooltip/src/content.vue.ts generated
+✔ Definition for file: components/tooltip/src/trigger.vue.ts generated
+✔ Definition for file: components/tooltip-v2/src/root.vue.ts generated
+✔ Definition for file: components/tooltip-v2/src/tooltip.vue.ts generated
+✔ Definition for file: components/tooltip/src/tooltip.vue.ts generated
+✔ Definition for file: components/transfer/src/transfer-panel.vue.ts generated
+✔ Definition for file: components/tree/src/tree-node-content.vue.ts generated
+✔ Definition for file: components/tooltip-v2/src/trigger.vue.ts generated
+✔ Definition for file: components/tree/src/tree-node.vue.ts generated
+✔ Definition for file: components/tree/src/tree.vue.ts generated
+✔ Definition for file: components/transfer/src/transfer.vue.ts generated
+✔ Definition for file: components/tooltip-v2/src/arrow.vue.ts generated
+✔ Definition for file: components/tooltip-v2/src/content.vue.ts generated
+✔ Definition for file: components/tree-select/src/tree-select.vue.ts generated
+✔ Definition for file: components/tree-v2/src/tree.vue.ts generated
+✔ Definition for file: components/steps/src/item.vue.ts generated
+✔ Definition for file: components/switch/src/switch.vue.ts generated
+✔ Definition for file: components/teleport/src/teleport.vue.ts generated
+✔ Definition for file: components/tree-v2/src/tree-node.vue.ts generated
+✔ Definition for file: components/upload/src/upload-content.vue.ts generated
+✔ Definition for file: components/upload/src/upload.vue.ts generated
+✔ Definition for file: components/visual-hidden/src/visual-hidden.vue.ts generated
+✔ Definition for file: components/upload/src/upload-dragger.vue.ts generated
+✔ Definition for file: components/color-picker/src/components/alpha-slider.vue.ts generated
+✔ Definition for file: components/upload/src/upload-list.vue.ts generated
+✔ Definition for file: components/color-picker/src/components/hue-slider.vue.ts generated
+✔ Definition for file: components/color-picker/src/components/predefine.vue.ts generated
+✔ Definition for file: components/color-picker/src/components/sv-panel.vue.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/basic-date-table.vue.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/basic-month-table.vue.ts generated
+✔ Definition for file: components/pagination/src/components/next.vue.ts generated
+✔ Definition for file: components/pagination/src/components/total.vue.ts generated
+✔ Definition for file: components/pagination/src/components/jumper.vue.ts generated
+✔ Definition for file: components/time-picker/src/common/picker.vue.ts generated
+✔ Definition for file: components/time-picker/src/time-picker-com/basic-time-spinner.vue.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/basic-year-table.vue.ts generated
+✔ Definition for file: components/time-picker/src/time-picker-com/panel-time-pick.vue.ts generated
+✔ Definition for file: components/time-picker/src/time-picker-com/panel-time-range.vue.ts generated
+✔ Definition for file: components/pagination/src/components/prev.vue.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/panel-month-range.vue.ts generated
+✔ Definition for file: components/pagination/src/components/pager.vue.ts generated
+✔ Definition for file: components/roving-focus-group/src/roving-focus-group.ts generated
+✔ Definition for file: components/upload/src/upload.ts generated
+✔ Definition for file: components/dropdown/index.ts generated
+✔ Definition for file: components/select/index.ts generated
+✔ Definition for file: components/select/src/useSelect.ts generated
+✔ Definition for file: components/select-v2/src/useSelect.ts generated
+✔ Definition for file: components/cascader/src/index.vue.ts generated
+✔ Definition for file: components/dropdown/src/dropdown.vue.ts generated
+✔ Definition for file: components/select/src/select.vue.ts generated
+✔ Definition for file: components/select-v2/src/select.vue.ts generated
+✔ Definition for file: components/table/src/filter-panel.vue.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/panel-date-pick.vue.ts generated
+✔ Definition for file: components/date-picker/src/date-picker-com/panel-date-range.vue.ts generated
+✔ Definition for file: components/pagination/src/components/sizes.vue.ts generated
+✔ Definition for file: components/select-v2/index.ts generated
+✔ Definition for file: components/cascader/index.ts generated
+✔ Definition for file: components/date-picker/src/panel-utils.ts generated
+✔ Definition for file: components/slider/src/composables/use-slide.ts generated
+✔ Definition for file: components/time-select/src/time-select.vue.ts generated
+✔ Definition for file: components/slider/index.ts generated
+✔ Definition for file: components/slider/src/slider.vue.ts generated
+✔ Definition for file: components/time-select/index.ts generated
+[20:03:34] Finished 'generateTypesDefinitions' after 1.82 min

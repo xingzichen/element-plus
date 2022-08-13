@@ -18,7 +18,7 @@
 import { ref, resolveDynamicComponent, unref } from 'vue'
 
 import type { FunctionalComponent } from 'vue'
-import type { Column, ElCheckbox } from 'element-plus'
+import type { Column, ElCheckbox } from '@lt13.10/element-plus'
 
 const Checkbox = resolveDynamicComponent('ElCheckbox') as typeof ElCheckbox
 

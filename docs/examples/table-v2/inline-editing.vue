@@ -18,7 +18,7 @@
 import { nextTick, ref, resolveDynamicComponent } from 'vue'
 
 import type { FunctionalComponent } from 'vue'
-import type { Column, ElInput } from 'element-plus'
+import type { Column, ElInput } from '@lt13.10/element-plus'
 
 const Input = resolveDynamicComponent('ElInput') as typeof ElInput
 
