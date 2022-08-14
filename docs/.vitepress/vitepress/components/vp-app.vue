@@ -116,7 +116,7 @@ onMounted(async () => {
     <VPSubNav v-if="hasSidebar" @open-menu="toggleSidebar(true)" />
     <VPSidebar :open="isSidebarOpen" @close="toggleSidebar(false)">
       <template #top>
-        <VPSponsors />
+        <!-- <VPSponsors /> -->
       </template>
       <template #bottom>
         <slot name="sidebar-bottom" />
