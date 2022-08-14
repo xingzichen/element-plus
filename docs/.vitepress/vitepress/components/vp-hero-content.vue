@@ -16,10 +16,10 @@
     <p class="mt-1">
       Made with ❤️ by
       <a
-        href="https://github.com/element-plus"
+        href="https://gitee.com/@lt13.10-element-plus"
         target="_blank"
         rel="noopener noreferer"
-        >Element Plus</a
+        >Giraffee</a
       >
     </p>
   </div>
