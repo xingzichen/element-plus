@@ -33,13 +33,14 @@ const currentLink = computed(() => {
   <div class="navbar-wrapper">
     <div class="header-container">
       <div class="logo-container">
-        <a :href="currentLink">
+        <!-- <a :href="currentLink">
           <img
             class="logo"
             src="/images/element-plus-logo.svg"
             alt="Element Plus Logo"
           />
-        </a>
+        </a> -->
+        可视柜台综合管理平台UI组件库
       </div>
       <div class="content">
         <!-- <VPNavbarSearch class="search" :options="theme.agolia" multilang /> -->
