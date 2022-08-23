@@ -109,14 +109,14 @@
 
 <script lang="ts" setup>
 import { computed, provide, reactive, toRefs } from 'vue'
-import ElInputNumber from '@element-plus/components/input-number'
+import ElInputNumber from '@lt13.10/components/input-number'
 import {
   useFormItemInputId,
   useLocale,
   useNamespace,
   useSize,
-} from '@element-plus/hooks'
-import { sliderContextKey } from '@element-plus/tokens'
+} from '@lt13.10/hooks'
+import { sliderContextKey } from '@lt13.10/tokens'
 import { sliderEmits, sliderProps } from './slider'
 import SliderButton from './button.vue'
 import SliderMarker from './marker'

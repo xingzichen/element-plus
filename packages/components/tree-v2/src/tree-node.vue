@@ -52,9 +52,9 @@
 // @ts-nocheck
 import { computed, defineComponent, inject } from 'vue'
 import { CaretRight } from '@element-plus/icons-vue'
-import ElIcon from '@element-plus/components/icon'
-import ElCheckbox from '@element-plus/components/checkbox'
-import { useNamespace } from '@element-plus/hooks'
+import ElIcon from '@lt13.10/components/icon'
+import ElCheckbox from '@lt13.10/components/checkbox'
+import { useNamespace } from '@lt13.10/hooks'
 import ElNodeContent from './tree-node-content'
 import {
   NODE_CONTEXTMENU,

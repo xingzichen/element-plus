@@ -16,22 +16,17 @@ import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@lt13.10/constants'
 import {
   debugWarn,
   getComponentSize,
   isKorean,
   scrollIntoView,
-} from '@element-plus/utils'
-import {
-  useFormItem,
-  useLocale,
-  useNamespace,
-  useSize,
-} from '@element-plus/hooks'
+} from '@lt13.10/utils'
+import { useFormItem, useLocale, useNamespace, useSize } from '@lt13.10/hooks'
 
 import type { ComponentPublicInstance } from 'vue'
-import type ElTooltip from '@element-plus/components/tooltip'
+import type ElTooltip from '@lt13.10/components/tooltip'
 import type { QueryChangeCtx, SelectOptionProxy } from './token'
 
 export function useSelectStates(props) {

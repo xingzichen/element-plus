@@ -1,15 +1,15 @@
 // @ts-nocheck
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@lt13.10/utils'
 import {
   usePopperContentProps,
   usePopperTriggerProps,
-} from '@element-plus/components/popper'
+} from '@lt13.10/components/popper'
 import {
   POPPER_CONTAINER_SELECTOR,
   useDelayedToggleProps,
   useNamespace,
-} from '@element-plus/hooks'
-import { EVENT_CODE } from '@element-plus/constants'
+} from '@lt13.10/hooks'
+import { EVENT_CODE } from '@lt13.10/constants'
 import type Tooltip from '../tooltip.vue'
 
 import type { ExtractPropTypes } from 'vue'

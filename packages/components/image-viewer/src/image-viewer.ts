@@ -1,9 +1,4 @@
-import {
-  buildProps,
-  definePropType,
-  isNumber,
-  mutable,
-} from '@element-plus/utils'
+import { buildProps, definePropType, isNumber, mutable } from '@lt13.10/utils'
 import type { Component, ExtractPropTypes } from 'vue'
 
 export type ImageViewerAction =

@@ -14,8 +14,8 @@ import {
   isFragment,
   isNumber,
   isValidElementNode,
-} from '@element-plus/utils'
-import { componentSizes } from '@element-plus/constants'
+} from '@lt13.10/utils'
+import { componentSizes } from '@lt13.10/constants'
 import Item from './item'
 import { useSpace } from './use-space'
 

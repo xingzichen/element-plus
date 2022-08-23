@@ -68,10 +68,10 @@
 
 <script lang="ts" setup>
 import { computed, provide, ref, useSlots } from 'vue'
-import { ElOverlay } from '@element-plus/components/overlay'
-import { useDeprecated, useNamespace, useSameTarget } from '@element-plus/hooks'
-import { dialogInjectionKey } from '@element-plus/tokens'
-import ElFocusTrap from '@element-plus/components/focus-trap'
+import { ElOverlay } from '@lt13.10/components/overlay'
+import { useDeprecated, useNamespace, useSameTarget } from '@lt13.10/hooks'
+import { dialogInjectionKey } from '@lt13.10/tokens'
+import ElFocusTrap from '@lt13.10/components/focus-trap'
 import ElDialogContent from './dialog-content.vue'
 import { dialogEmits, dialogProps } from './dialog'
 import { useDialog } from './use-dialog'

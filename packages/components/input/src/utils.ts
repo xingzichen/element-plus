@@ -1,4 +1,4 @@
-import { isNumber } from '@element-plus/utils'
+import { isNumber } from '@lt13.10/utils'
 
 let hiddenTextarea: HTMLTextAreaElement | undefined = undefined
 

@@ -13,9 +13,9 @@ import {
   watch,
 } from 'vue'
 import { useTimeoutFn } from '@vueuse/core'
-import { useId, useNamespace } from '@element-plus/hooks'
-import { isNumber, isPropAbsent } from '@element-plus/utils'
-import { TOOLTIP_V2_OPEN, tooltipV2RootKey } from '@element-plus/tokens'
+import { useId, useNamespace } from '@lt13.10/hooks'
+import { isNumber, isPropAbsent } from '@lt13.10/utils'
+import { TOOLTIP_V2_OPEN, tooltipV2RootKey } from '@lt13.10/tokens'
 import { tooltipV2RootProps } from './root'
 
 defineOptions({

@@ -1,7 +1,7 @@
 import { describe, expect, test, vi } from 'vitest'
-import { EVENT_CODE } from '@element-plus/constants'
+import { EVENT_CODE } from '@lt13.10/constants'
 
-import makeMount from '@element-plus/test-utils/make-mount'
+import makeMount from '@lt13.10/test-utils/make-mount'
 import UploadList from '../src/upload-list.vue'
 
 const testName = 'test name'

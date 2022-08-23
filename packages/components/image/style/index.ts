@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/image.scss'
-import '@element-plus/components/image-viewer/style'
+import '@lt13.10/components/base/style'
+import '@lt13.10/theme-chalk/src/image.scss'
+import '@lt13.10/components/image-viewer/style'

@@ -1,14 +1,14 @@
 import { nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { debugWarn } from '@element-plus/utils'
-import { rAF } from '@element-plus/test-utils/tick'
-import { ElPopperTrigger } from '@element-plus/components/popper'
+import { debugWarn } from '@lt13.10/utils'
+import { rAF } from '@lt13.10/test-utils/tick'
+import { ElPopperTrigger } from '@lt13.10/components/popper'
 import Tooltip from '../src/tooltip.vue'
 
 import type { VNode } from 'vue'
 
-vi.mock('@element-plus/utils/error', () => ({
+vi.mock('@lt13.10/utils/error', () => ({
   debugWarn: vi.fn(),
 }))
 

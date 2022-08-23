@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/theme-chalk/el-pagination.css'
-import '@element-plus/components/select/style/css'
+import '@lt13.10/components/base/style/css'
+import '@lt13.10/theme-chalk/el-pagination.css'
+import '@lt13.10/components/select/style/css'

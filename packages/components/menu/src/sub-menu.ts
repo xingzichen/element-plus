@@ -15,16 +15,16 @@ import {
   withDirectives,
 } from 'vue'
 import { useTimeoutFn } from '@vueuse/core'
-import ElCollapseTransition from '@element-plus/components/collapse-transition'
-import ElTooltip from '@element-plus/components/tooltip'
-import { buildProps, throwError } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
 import { ArrowDown, ArrowRight } from '@element-plus/icons-vue'
-import { ElIcon } from '@element-plus/components/icon'
+import ElCollapseTransition from '@lt13.10/components/collapse-transition'
+import ElTooltip from '@lt13.10/components/tooltip'
+import { buildProps, throwError } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
+import { ElIcon } from '@lt13.10/components/icon'
 import useMenu from './use-menu'
 import { useMenuCssVar } from './use-menu-css-var'
 
-import type { Placement } from '@element-plus/components/popper'
+import type { Placement } from '@lt13.10/components/popper'
 import type { CSSProperties, ExtractPropTypes, VNodeArrayChildren } from 'vue'
 import type { MenuProvider, SubMenuProvider } from './types'
 

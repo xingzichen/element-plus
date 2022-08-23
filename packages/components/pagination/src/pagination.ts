@@ -14,9 +14,9 @@ import {
   definePropType,
   iconPropType,
   mutable,
-} from '@element-plus/utils'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { elPaginationKey } from '@element-plus/tokens'
+} from '@lt13.10/utils'
+import { useLocale, useNamespace } from '@lt13.10/hooks'
+import { elPaginationKey } from '@lt13.10/tokens'
 
 import Prev from './components/prev.vue'
 import Next from './components/next.vue'

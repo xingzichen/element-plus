@@ -1,4 +1,4 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@lt13.10/utils'
 import Upload from './src/upload.vue'
 
 export const ElUpload = withInstall(Upload)

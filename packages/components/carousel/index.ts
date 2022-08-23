@@ -1,4 +1,4 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@lt13.10/utils'
 import Carousel from './src/carousel.vue'
 import CarouselItem from './src/carousel-item.vue'
 

@@ -1,9 +1,9 @@
 import { h, nextTick } from 'vue'
 import { describe, expect, test, vi } from 'vitest'
-import makeMount from '@element-plus/test-utils/make-mount'
-import { rAF } from '@element-plus/test-utils/tick'
-import { TypeComponentsMap } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
+import makeMount from '@lt13.10/test-utils/make-mount'
+import { rAF } from '@lt13.10/test-utils/tick'
+import { TypeComponentsMap } from '@lt13.10/utils'
+import { EVENT_CODE } from '@lt13.10/constants'
 import Message from '../src/message.vue'
 import type { CSSProperties, Component, ComponentPublicInstance } from 'vue'
 

@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import { CHANGE_EVENT } from '@element-plus/constants'
-import { useNamespace } from '@element-plus/hooks'
+import { CHANGE_EVENT } from '@lt13.10/constants'
+import { useNamespace } from '@lt13.10/hooks'
 import { checkTagEmits, checkTagProps } from './check-tag'
 
 defineOptions({

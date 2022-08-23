@@ -1,4 +1,4 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@lt13.10/utils'
 import Progress from './src/progress.vue'
 
 export const ElProgress = withInstall(Progress)

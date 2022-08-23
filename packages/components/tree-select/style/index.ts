@@ -1,3 +1,3 @@
-import '@element-plus/components/select/style'
-import '@element-plus/components/tree/style'
-import '@element-plus/theme-chalk/src/tree-select.scss'
+import '@lt13.10/components/select/style'
+import '@lt13.10/components/tree/style'
+import '@lt13.10/theme-chalk/src/tree-select.scss'

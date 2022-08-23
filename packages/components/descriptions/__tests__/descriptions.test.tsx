@@ -2,7 +2,7 @@
 import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, test } from 'vitest'
-import ElTag from '@element-plus/components/tag'
+import ElTag from '@lt13.10/components/tag'
 import ElDescriptions from '../src/description.vue'
 import ElDescriptionsItem from '../src/description-item'
 

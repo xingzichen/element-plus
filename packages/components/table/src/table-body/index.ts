@@ -8,8 +8,8 @@ import {
   watch,
 } from 'vue'
 import { isClient } from '@vueuse/core'
-import { addClass, removeClass } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { addClass, removeClass } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import useLayoutObserver from '../layout-observer'
 import { removePopper } from '../util'
 import { TABLE_INJECTION_KEY } from '../tokens'

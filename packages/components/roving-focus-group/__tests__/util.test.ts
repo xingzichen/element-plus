@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { EVENT_CODE } from '@element-plus/constants'
+import { EVENT_CODE } from '@lt13.10/constants'
 import * as Util from '../src/utils'
 
 describe('util', () => {

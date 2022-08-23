@@ -1,9 +1,9 @@
 import { NOOP } from '@vue/shared'
-import { buildProps, definePropType, mutable } from '@element-plus/utils'
+import { buildProps, definePropType, mutable } from '@lt13.10/utils'
 import { ajaxUpload } from './ajax'
 
 import type { UploadAjaxError } from './ajax'
-import type { Awaitable } from '@element-plus/utils'
+import type { Awaitable } from '@lt13.10/utils'
 import type { ExtractPropTypes } from 'vue'
 import type Upload from './upload.vue'
 

@@ -20,7 +20,7 @@ import {
   TableV2SortOrder,
 } from '@lt13.10/element-plus'
 
-import type { Column, SortBy } from '@element-plus/components/table-v2'
+import type { Column, SortBy } from '@lt13.10/components/table-v2'
 
 const longText =
   'Quaerat ipsam necessitatibus eum quibusdam est id voluptatem cumque mollitia.'

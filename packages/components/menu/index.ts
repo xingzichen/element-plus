@@ -1,4 +1,4 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@lt13.10/utils'
 
 import Menu from './src/menu'
 import MenuItem from './src/menu-item.vue'

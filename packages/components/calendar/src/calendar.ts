@@ -1,10 +1,5 @@
-import {
-  buildProps,
-  definePropType,
-  isArray,
-  isDate,
-} from '@element-plus/utils'
-import { INPUT_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { buildProps, definePropType, isArray, isDate } from '@lt13.10/utils'
+import { INPUT_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 import type { ExtractPropTypes } from 'vue'
 import type Calendar from './calendar.vue'
 

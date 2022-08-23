@@ -1,5 +1,5 @@
-import { buildProps } from '@element-plus/utils'
-import { componentSizes } from '@element-plus/constants'
+import { buildProps } from '@lt13.10/utils'
+import { componentSizes } from '@lt13.10/constants'
 import type Tag from './tag.vue'
 
 import type { ExtractPropTypes } from 'vue'

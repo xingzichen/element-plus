@@ -1,4 +1,4 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/theme-chalk/el-color-picker.css'
-import '@element-plus/components/input/style/css'
-import '@element-plus/components/button/style/css'
+import '@lt13.10/components/base/style/css'
+import '@lt13.10/theme-chalk/el-color-picker.css'
+import '@lt13.10/components/input/style/css'
+import '@lt13.10/components/button/style/css'

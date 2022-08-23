@@ -16,7 +16,7 @@
     "rootDir": ".",
     "types": [],
     "paths": {
-      "@element-plus/*": ["packages/*"]
+      "@lt13.10/*": ["packages/*"]
     }
   }
 }

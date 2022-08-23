@@ -1,6 +1,6 @@
 import { watch } from 'vue'
 import { useVModel } from '@vueuse/core'
-import { debugWarn, throwError } from '@element-plus/utils'
+import { debugWarn, throwError } from '@lt13.10/utils'
 import { genFileId } from './upload'
 import type { ShallowRef } from 'vue'
 import type {

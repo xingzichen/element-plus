@@ -1,5 +1,5 @@
-import { CHANGE_EVENT } from '@element-plus/constants'
-import { buildProps, isNumber } from '@element-plus/utils'
+import { CHANGE_EVENT } from '@lt13.10/constants'
+import { buildProps, isNumber } from '@lt13.10/utils'
 import type Steps from './steps.vue'
 import type { ExtractPropTypes } from 'vue'
 

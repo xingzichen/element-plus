@@ -10,10 +10,10 @@ import {
   watch,
   withModifiers,
 } from 'vue'
-import { BAR_MAP } from '@element-plus/components/scrollbar'
-import { cAF, rAF } from '@element-plus/utils'
+import { BAR_MAP } from '@lt13.10/components/scrollbar'
+import { cAF, rAF } from '@lt13.10/utils'
 
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 import { HORIZONTAL, SCROLLBAR_MIN_SIZE, ScrollbarDirKey } from '../defaults'
 import { virtualizedScrollbarProps } from '../props'
 import { renderThumbStyle } from '../utils'

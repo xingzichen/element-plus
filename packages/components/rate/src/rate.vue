@@ -50,11 +50,11 @@
 </template>
 <script lang="ts" setup>
 import { type CSSProperties, computed, inject, ref, watch } from 'vue'
-import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { hasClass, isArray, isObject } from '@element-plus/utils'
-import { formContextKey, formItemContextKey } from '@element-plus/tokens'
-import { ElIcon } from '@element-plus/components/icon'
-import { useFormItemInputId, useNamespace, useSize } from '@element-plus/hooks'
+import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
+import { hasClass, isArray, isObject } from '@lt13.10/utils'
+import { formContextKey, formItemContextKey } from '@lt13.10/tokens'
+import { ElIcon } from '@lt13.10/components/icon'
+import { useFormItemInputId, useNamespace, useSize } from '@lt13.10/hooks'
 import { rateEmits, rateProps } from './rate'
 
 function getValueFromMap<T>(

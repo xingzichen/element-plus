@@ -29,12 +29,12 @@ import {
   shallowRef,
   watch,
 } from 'vue'
-import { getClientXY } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { getClientXY } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import draggable from '../draggable'
 
 import type { PropType } from 'vue'
-import type { Nullable } from '@element-plus/utils'
+import type { Nullable } from '@lt13.10/utils'
 import type Color from '../color'
 
 export default defineComponent({

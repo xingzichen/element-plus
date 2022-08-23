@@ -7,7 +7,7 @@ import {
   watch,
 } from 'vue'
 import { debounce } from 'lodash-unified'
-import { isNumber } from '@element-plus/utils'
+import { isNumber } from '@lt13.10/utils'
 import { FixedDir } from '../constants'
 
 import type { Ref } from 'vue'

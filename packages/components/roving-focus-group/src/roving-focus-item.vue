@@ -18,9 +18,9 @@ import {
   ref,
   unref,
 } from 'vue'
-import { useId } from '@element-plus/hooks'
-import { composeEventHandlers } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
+import { useId } from '@lt13.10/hooks'
+import { composeEventHandlers } from '@lt13.10/utils'
+import { EVENT_CODE } from '@lt13.10/constants'
 import {
   ElCollectionItem as ElRovingFocusCollectionItem,
   ROVING_FOCUS_COLLECTION_INJECTION_KEY,

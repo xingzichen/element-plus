@@ -1,4 +1,4 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@lt13.10/utils'
 import CheckTag from './src/check-tag.vue'
 
 export const ElCheckTag = withInstall(CheckTag)

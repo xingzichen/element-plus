@@ -4,8 +4,8 @@ import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it } from 'vitest'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'
-import Select from '@element-plus/components/select'
-import { ElFormItem } from '@element-plus/components/form'
+import Select from '@lt13.10/components/select'
+import { ElFormItem } from '@lt13.10/components/form'
 import TimeSelect from '../src/time-select.vue'
 dayjs.extend(customParseFormat)
 

@@ -10,12 +10,8 @@ import {
   errorAndExit,
   projRoot,
   writeJson,
-} from '@element-plus/build-utils'
-import {
-  REPO_BRANCH,
-  REPO_NAME,
-  REPO_OWNER,
-} from '@element-plus/build-constants'
+} from '@lt13.10/build-utils'
+import { REPO_BRANCH, REPO_NAME, REPO_OWNER } from '@lt13.10/build-constants'
 
 interface FetchOption {
   key: string

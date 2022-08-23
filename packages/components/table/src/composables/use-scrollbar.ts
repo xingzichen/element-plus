@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { isNumber } from '@element-plus/utils'
+import { isNumber } from '@lt13.10/utils'
 
 export const useScrollbar = () => {
   const scrollBarRef = ref()

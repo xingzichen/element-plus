@@ -55,8 +55,8 @@ will start the local development environment
 </template>
 
 <script setup lang="ts">
-// make sure this component is registered in @element-plus/components
-import { ComponentYouAreDeveloping } from '@element-plus/components'
+// make sure this component is registered in @lt13.10/components
+import { ComponentYouAreDeveloping } from '@lt13.10/components'
 </script>
 ```
 

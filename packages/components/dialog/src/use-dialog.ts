@@ -14,9 +14,9 @@ import {
   useId,
   useLockscreen,
   useZIndex,
-} from '@element-plus/hooks'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { addUnit } from '@element-plus/utils'
+} from '@lt13.10/hooks'
+import { UPDATE_MODEL_EVENT } from '@lt13.10/constants'
+import { addUnit } from '@lt13.10/utils'
 
 import type { CSSProperties, Ref, SetupContext } from 'vue'
 import type { DialogEmits, DialogProps } from './dialog'

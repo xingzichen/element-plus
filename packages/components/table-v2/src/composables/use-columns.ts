@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { computed, unref } from 'vue'
-import { isObject } from '@element-plus/utils'
+import { isObject } from '@lt13.10/utils'
 import { SortOrder, oppositeOrderMap } from '../constants'
 import { placeholderSign } from '../private'
 import { calcColumnStyle } from './utils'

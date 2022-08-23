@@ -3,22 +3,17 @@ import { computed, nextTick, onMounted, reactive, ref, watch } from 'vue'
 import { isArray, isFunction, isObject } from '@vue/shared'
 import { get, isEqual, debounce as lodashDebounce } from 'lodash-unified'
 import { useResizeObserver } from '@vueuse/core'
-import {
-  useFormItem,
-  useLocale,
-  useNamespace,
-  useSize,
-} from '@element-plus/hooks'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { ValidateComponentsMap, debugWarn } from '@element-plus/utils'
-
 import { ArrowUp } from '@element-plus/icons-vue'
+import { useFormItem, useLocale, useNamespace, useSize } from '@lt13.10/hooks'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
+import { ValidateComponentsMap, debugWarn } from '@lt13.10/utils'
+
 import { useAllowCreate } from './useAllowCreate'
 
 import { flattenOptions } from './util'
 
 import { useInput } from './useInput'
-import type ElTooltip from '@element-plus/components/tooltip'
+import type ElTooltip from '@lt13.10/components/tooltip'
 import type { SelectProps } from './defaults'
 import type { CSSProperties, ExtractPropTypes } from 'vue'
 import type { Option, OptionType } from './select.types'

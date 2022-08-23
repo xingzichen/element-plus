@@ -16,21 +16,21 @@ import {
   useResizeObserver,
   useWindowFocus,
 } from '@vueuse/core'
+import { ArrowLeft, ArrowRight, Close } from '@element-plus/icons-vue'
 import {
   buildProps,
   capitalize,
   definePropType,
   mutable,
   throwError,
-} from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
-import { ElIcon } from '@element-plus/components/icon'
-import { ArrowLeft, ArrowRight, Close } from '@element-plus/icons-vue'
-import { tabsRootContextKey } from '@element-plus/tokens'
-import { useNamespace } from '@element-plus/hooks'
+} from '@lt13.10/utils'
+import { EVENT_CODE } from '@lt13.10/constants'
+import { ElIcon } from '@lt13.10/components/icon'
+import { tabsRootContextKey } from '@lt13.10/tokens'
+import { useNamespace } from '@lt13.10/hooks'
 import TabBar from './tab-bar.vue'
 import type { CSSProperties, ExtractPropTypes } from 'vue'
-import type { TabsPaneContext } from '@element-plus/tokens'
+import type { TabsPaneContext } from '@lt13.10/tokens'
 import type { TabPanelName } from './tabs'
 
 interface Scrollable {

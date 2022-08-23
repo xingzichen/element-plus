@@ -8,8 +8,8 @@ import {
   unref,
   watchEffect,
 } from 'vue'
-import { debugWarn } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { debugWarn } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import {
   cellForced,
   defaultRenderCell,

@@ -1,6 +1,6 @@
-import { buildProps, definePropType } from '@element-plus/utils'
-import { useSizeProp } from '@element-plus/hooks'
 import { CircleClose } from '@element-plus/icons-vue'
+import { buildProps, definePropType } from '@lt13.10/utils'
+import { useSizeProp } from '@lt13.10/hooks'
 import { disabledTimeListsProps } from '../props/shared'
 
 import type { Component, ExtractPropTypes } from 'vue'

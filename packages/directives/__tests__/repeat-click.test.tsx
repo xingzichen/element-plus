@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, vi } from 'vitest'
-import sleep from '@element-plus/test-utils/sleep'
+import sleep from '@lt13.10/test-utils/sleep'
 import RepeatClick from '../repeat-click'
 
 let handler: ReturnType<typeof vi.fn>

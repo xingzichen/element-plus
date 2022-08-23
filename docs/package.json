@@ -1,5 +1,5 @@
 {
-  "name": "@element-plus/docs",
+  "name": "@lt13.10/docs",
   "private": true,
   "scripts": {
     "dev": "pnpm gen-locale && vitepress dev .",
@@ -11,8 +11,8 @@
   "dependencies": {
     "@docsearch/js": "^3.1.0",
     "@element-plus/icons-vue": "^2.0.9",
-    "@element-plus/metadata": "workspace:*",
-    "@lt13.10/element-plus": "file:../dist/element-plus",
+    "@lt13.10/element-plus": "npm:element-plus@latest",
+    "@lt13.10/metadata": "workspace:*",
     "@vue/shared": "^3.2.37",
     "@vueuse/core": "^9.1.0",
     "axios": "^0.27.2",
@@ -26,10 +26,10 @@
   "devDependencies": {
     "@crowdin/cli": "^3.7.8",
     "@docsearch/react": "^3.1.0",
-    "@element-plus/build": "workspace:*",
-    "@element-plus/build-constants": "workspace:*",
-    "@element-plus/build-utils": "workspace:*",
     "@iconify-json/ri": "^1.1.3",
+    "@lt13.10/build": "workspace:*",
+    "@lt13.10/build-constants": "workspace:*",
+    "@lt13.10/build-utils": "workspace:*",
     "@types/markdown-it": "^12.2.3",
     "@vitejs/plugin-vue-jsx": "^1.3.10",
     "chalk": "^4.1.2",

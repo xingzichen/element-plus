@@ -114,21 +114,21 @@ import {
   watch,
 } from 'vue'
 import { debounce } from 'lodash-unified'
-import ElButton from '@element-plus/components/button'
-import ElIcon from '@element-plus/components/icon'
-import { ClickOutside } from '@element-plus/directives'
+import { ArrowDown, Close } from '@element-plus/icons-vue'
+import ElButton from '@lt13.10/components/button'
+import ElIcon from '@lt13.10/components/icon'
+import { ClickOutside } from '@lt13.10/directives'
 import {
   useFormItem,
   useFormItemInputId,
   useLocale,
   useNamespace,
   useSize,
-} from '@element-plus/hooks'
-import ElTooltip from '@element-plus/components/tooltip'
-import ElInput from '@element-plus/components/input'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { debugWarn, isValidComponentSize } from '@element-plus/utils'
-import { ArrowDown, Close } from '@element-plus/icons-vue'
+} from '@lt13.10/hooks'
+import ElTooltip from '@lt13.10/components/tooltip'
+import ElInput from '@lt13.10/components/input'
+import { UPDATE_MODEL_EVENT } from '@lt13.10/constants'
+import { debugWarn, isValidComponentSize } from '@lt13.10/utils'
 import AlphaSlider from './components/alpha-slider.vue'
 import HueSlider from './components/hue-slider.vue'
 import Predefine from './components/predefine.vue'
@@ -136,7 +136,7 @@ import SvPanel from './components/sv-panel.vue'
 import Color from './color'
 import { OPTIONS_KEY } from './useOption'
 import type { PropType } from 'vue'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@lt13.10/constants'
 import type { IUseOptions } from './useOption'
 
 export default defineComponent({

@@ -13,9 +13,9 @@
 
 <script lang="ts" setup>
 import { computed, nextTick, provide, toRefs, watch } from 'vue'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { debugWarn } from '@element-plus/utils'
-import { useNamespace, useSize } from '@element-plus/hooks'
+import { UPDATE_MODEL_EVENT } from '@lt13.10/constants'
+import { debugWarn } from '@lt13.10/utils'
+import { useNamespace, useSize } from '@lt13.10/hooks'
 import {
   checkboxGroupEmits,
   useCheckboxGroup,

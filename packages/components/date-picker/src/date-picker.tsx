@@ -8,14 +8,14 @@ import weekYear from 'dayjs/plugin/weekYear.js'
 import dayOfYear from 'dayjs/plugin/dayOfYear.js'
 import isSameOrAfter from 'dayjs/plugin/isSameOrAfter.js'
 import isSameOrBefore from 'dayjs/plugin/isSameOrBefore.js'
-import { useNamespace } from '@element-plus/hooks'
-import { ROOT_PICKER_INJECTION_KEY } from '@element-plus/tokens'
+import { useNamespace } from '@lt13.10/hooks'
+import { ROOT_PICKER_INJECTION_KEY } from '@lt13.10/tokens'
 import {
   CommonPicker,
   DEFAULT_FORMATS_DATE,
   DEFAULT_FORMATS_DATEPICKER,
   timePickerDefaultProps,
-} from '@element-plus/components/time-picker'
+} from '@lt13.10/components/time-picker'
 
 import { datePickerProps } from './props/date-picker'
 import { getPanel } from './panel-utils'

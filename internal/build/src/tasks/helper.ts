@@ -5,7 +5,7 @@ import {
   epPackage,
   getPackageManifest,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@lt13.10/build-utils'
 
 import type { TaskFunction } from 'gulp'
 import type {

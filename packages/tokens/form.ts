@@ -4,7 +4,7 @@ import type {
   ValidateError,
   ValidateFieldsError,
 } from 'async-validator'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@lt13.10/constants'
 import type {
   FormEmits,
   FormItemProp,
@@ -12,8 +12,8 @@ import type {
   FormItemValidateState,
   FormLabelWidthContext,
   FormProps,
-} from '@element-plus/components/form'
-import type { Arrayable } from '@element-plus/utils'
+} from '@lt13.10/components/form'
+import type { Arrayable } from '@lt13.10/utils'
 
 export interface FormItemRule extends RuleItem {
   trigger?: Arrayable<string>

@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/upload.scss'
-import '@element-plus/components/progress/style'
+import '@lt13.10/components/base/style'
+import '@lt13.10/theme-chalk/src/upload.scss'
+import '@lt13.10/components/progress/style'

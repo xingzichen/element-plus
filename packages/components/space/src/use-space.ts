@@ -1,6 +1,6 @@
 import { computed, ref, watchEffect } from 'vue'
-import { isArray, isNumber } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { isArray, isNumber } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 
 import type { SpaceProps } from './space'
 import type { CSSProperties, StyleValue } from 'vue'

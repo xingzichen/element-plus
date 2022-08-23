@@ -1,6 +1,6 @@
 import { computed, defineComponent, h } from 'vue'
-import { buildProps, definePropType, isString } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { buildProps, definePropType, isString } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import type { CSSProperties, ExtractPropTypes } from 'vue'
 
 export const sliderMarkerProps = buildProps({

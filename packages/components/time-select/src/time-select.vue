@@ -34,9 +34,9 @@
 import { computed, ref } from 'vue'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'
-import ElSelect from '@element-plus/components/select'
-import ElIcon from '@element-plus/components/icon'
-import { useNamespace } from '@element-plus/hooks'
+import ElSelect from '@lt13.10/components/select'
+import ElIcon from '@lt13.10/components/icon'
+import { useNamespace } from '@lt13.10/hooks'
 import { timeSelectProps } from './time-select'
 import { compareTime, formatTime, nextTime, parseTime } from './utils'
 

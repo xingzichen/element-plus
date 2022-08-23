@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/descriptions.scss'
-import '@element-plus/components/descriptions-item/style'
+import '@lt13.10/components/base/style'
+import '@lt13.10/theme-chalk/src/descriptions.scss'
+import '@lt13.10/components/descriptions-item/style'

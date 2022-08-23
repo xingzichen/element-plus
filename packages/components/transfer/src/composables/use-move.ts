@@ -1,4 +1,4 @@
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 import { usePropsAlias } from './use-props-alias'
 
 import type { SetupContext } from 'vue'

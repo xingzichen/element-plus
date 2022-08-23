@@ -6,7 +6,7 @@ import {
   isString,
   isUndefined,
   isVNode,
-} from '@element-plus/utils'
+} from '@lt13.10/utils'
 import MessageBoxConstructor from './index.vue'
 
 import type { AppContext, ComponentPublicInstance, VNode } from 'vue'

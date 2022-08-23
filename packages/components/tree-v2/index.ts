@@ -1,4 +1,4 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@lt13.10/utils'
 import TreeV2 from './src/tree.vue'
 
 export const ElTreeV2 = withInstall(TreeV2)

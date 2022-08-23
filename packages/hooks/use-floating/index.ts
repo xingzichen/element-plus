@@ -2,7 +2,7 @@ import { isRef, onMounted, ref, unref, watchEffect } from 'vue'
 import { isClient, unrefElement } from '@vueuse/core'
 import { isNil } from 'lodash-unified'
 import { arrow as arrowCore, computePosition } from '@floating-ui/dom'
-import { buildProps, keysOf } from '@element-plus/utils'
+import { buildProps, keysOf } from '@lt13.10/utils'
 
 import type { Ref, ToRefs } from 'vue'
 import type {

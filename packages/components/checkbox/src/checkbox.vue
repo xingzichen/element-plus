@@ -65,7 +65,7 @@
 
 <script lang="ts" setup>
 import { useSlots } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 import { checkboxEmits, checkboxProps, useCheckbox } from './checkbox'
 
 defineOptions({

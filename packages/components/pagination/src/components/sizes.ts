@@ -1,4 +1,4 @@
-import { buildProps, definePropType, mutable } from '@element-plus/utils'
+import { buildProps, definePropType, mutable } from '@lt13.10/utils'
 import type { ExtractPropTypes } from 'vue'
 import type Sizes from './sizes.vue'
 

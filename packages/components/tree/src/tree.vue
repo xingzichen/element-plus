@@ -43,8 +43,8 @@ import {
   ref,
   watch,
 } from 'vue'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { formItemContextKey } from '@element-plus/tokens'
+import { useLocale, useNamespace } from '@lt13.10/hooks'
+import { formItemContextKey } from '@lt13.10/tokens'
 import TreeStore from './model/tree-store'
 import { getNodeKey as getNodeKeyUtil } from './model/util'
 import ElTreeNode from './tree-node.vue'
@@ -54,7 +54,7 @@ import { useKeydown } from './model/useKeydown'
 import type Node from './model/node'
 
 import type { Component, ComponentInternalInstance, PropType } from 'vue'
-import type { Nullable } from '@element-plus/utils'
+import type { Nullable } from '@lt13.10/utils'
 import type {
   TreeComponentProps,
   TreeData,

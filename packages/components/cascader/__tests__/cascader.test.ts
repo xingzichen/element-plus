@@ -2,11 +2,11 @@
 import { nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it, test, vi } from 'vitest'
-import { EVENT_CODE } from '@element-plus/constants'
-import triggerEvent from '@element-plus/test-utils/trigger-event'
 import { ArrowDown, Check, CircleClose } from '@element-plus/icons-vue'
-import { POPPER_CONTAINER_SELECTOR } from '@element-plus/hooks'
-import { hasClass } from '@element-plus/utils'
+import { EVENT_CODE } from '@lt13.10/constants'
+import triggerEvent from '@lt13.10/test-utils/trigger-event'
+import { POPPER_CONTAINER_SELECTOR } from '@lt13.10/hooks'
+import { hasClass } from '@lt13.10/utils'
 import Cascader from '../src/index.vue'
 
 vi.mock('lodash-unified', async () => {

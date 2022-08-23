@@ -27,7 +27,7 @@
 <script lang="ts" setup>
 // @ts-nocheck
 import { computed, provide, useSlots } from 'vue'
-import { useNamespace, useSize } from '@element-plus/hooks'
+import { useNamespace, useSize } from '@lt13.10/hooks'
 import ElDescriptionsRow from './descriptions-row.vue'
 import { descriptionsKey } from './token'
 import { descriptionProps } from './description'

@@ -159,8 +159,8 @@ import {
   toRefs,
   watch,
 } from 'vue'
-import ElButton from '@element-plus/components/button'
-import { TrapFocus } from '@element-plus/directives'
+import ElButton from '@lt13.10/components/button'
+import { TrapFocus } from '@lt13.10/directives'
 import {
   useDraggable,
   useId,
@@ -171,19 +171,19 @@ import {
   useSameTarget,
   useSize,
   useZIndex,
-} from '@element-plus/hooks'
-import ElInput from '@element-plus/components/input'
-import { ElOverlay } from '@element-plus/components/overlay'
+} from '@lt13.10/hooks'
+import ElInput from '@lt13.10/components/input'
+import { ElOverlay } from '@lt13.10/components/overlay'
 import {
   TypeComponents,
   TypeComponentsMap,
   isValidComponentSize,
-} from '@element-plus/utils'
-import { ElIcon } from '@element-plus/components/icon'
-import ElFocusTrap from '@element-plus/components/focus-trap'
+} from '@lt13.10/utils'
+import { ElIcon } from '@lt13.10/components/icon'
+import ElFocusTrap from '@lt13.10/components/focus-trap'
 
 import type { ComponentPublicInstance, PropType } from 'vue'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@lt13.10/constants'
 import type {
   Action,
   MessageBoxState,

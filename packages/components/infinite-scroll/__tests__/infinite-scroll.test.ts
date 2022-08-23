@@ -10,9 +10,9 @@ import {
   test,
   vi,
 } from 'vitest'
-import defineGetter from '@element-plus/test-utils/define-getter'
-import makeScroll from '@element-plus/test-utils/make-scroll'
-import tick from '@element-plus/test-utils/tick'
+import defineGetter from '@lt13.10/test-utils/define-getter'
+import makeScroll from '@lt13.10/test-utils/make-scroll'
+import tick from '@lt13.10/test-utils/tick'
 import InfiniteScroll, { DEFAULT_DELAY, SCOPE } from '../src'
 
 vi.mock('lodash-unified', () => {

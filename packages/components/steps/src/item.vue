@@ -58,9 +58,9 @@ import {
   ref,
   watch,
 } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { ElIcon } from '@element-plus/components/icon'
 import { Check, Close } from '@element-plus/icons-vue'
+import { useNamespace } from '@lt13.10/hooks'
+import { ElIcon } from '@lt13.10/components/icon'
 import { stepProps } from './item'
 
 import type { CSSProperties, Ref } from 'vue'

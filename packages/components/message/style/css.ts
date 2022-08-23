@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/components/badge/style/css'
-import '@element-plus/theme-chalk/el-message.css'
+import '@lt13.10/components/base/style/css'
+import '@lt13.10/components/badge/style/css'
+import '@lt13.10/theme-chalk/el-message.css'

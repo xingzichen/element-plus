@@ -1,4 +1,4 @@
-import type { SliderProps } from '@element-plus/components'
+import type { SliderProps } from '@lt13.10/components'
 import type { ComputedRef, InjectionKey, Ref, ToRefs } from 'vue'
 
 export interface SliderContext extends ToRefs<SliderProps> {

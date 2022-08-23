@@ -11,13 +11,8 @@ import {
   unref,
 } from 'vue'
 import { isClient } from '@vueuse/core'
-import {
-  getScrollBarWidth,
-  hasOwn,
-  isNumber,
-  isString,
-} from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { getScrollBarWidth, hasOwn, isNumber, isString } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import Scrollbar from '../components/scrollbar'
 import { useGridWheel } from '../hooks/use-grid-wheel'
 import { useCache } from '../hooks/use-cache'

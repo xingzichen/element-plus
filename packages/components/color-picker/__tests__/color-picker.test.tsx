@@ -1,7 +1,7 @@
 import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, vi } from 'vitest'
-import { ElFormItem } from '@element-plus/components/form'
+import { ElFormItem } from '@lt13.10/components/form'
 import ColorPicker from '../src/index.vue'
 import type { ComponentPublicInstance } from 'vue'
 

@@ -2,7 +2,7 @@ import { isClient, unrefElement } from '@vueuse/core'
 
 import type { ComponentPublicInstance } from 'vue'
 import type { MaybeRef } from '@vueuse/core'
-import type { Measurable } from '@element-plus/tokens'
+import type { Measurable } from '@lt13.10/tokens'
 import type { UsePopperCoreConfigProps } from './content'
 
 type ArrowProps = {

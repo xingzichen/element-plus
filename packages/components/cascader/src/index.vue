@@ -199,24 +199,18 @@ import { isPromise } from '@vue/shared'
 import { debounce } from 'lodash-unified'
 
 import { isClient, useResizeObserver } from '@vueuse/core'
+import { ArrowDown, Check, CircleClose } from '@element-plus/icons-vue'
 import ElCascaderPanel, {
   CommonProps,
-} from '@element-plus/components/cascader-panel'
-import ElInput from '@element-plus/components/input'
-import ElTooltip, {
-  useTooltipContentProps,
-} from '@element-plus/components/tooltip'
-import ElScrollbar from '@element-plus/components/scrollbar'
-import ElTag, { tagProps } from '@element-plus/components/tag'
-import ElIcon from '@element-plus/components/icon'
+} from '@lt13.10/components/cascader-panel'
+import ElInput from '@lt13.10/components/input'
+import ElTooltip, { useTooltipContentProps } from '@lt13.10/components/tooltip'
+import ElScrollbar from '@lt13.10/components/scrollbar'
+import ElTag, { tagProps } from '@lt13.10/components/tag'
+import ElIcon from '@lt13.10/components/icon'
 
-import { ClickOutside as Clickoutside } from '@element-plus/directives'
-import {
-  useFormItem,
-  useLocale,
-  useNamespace,
-  useSize,
-} from '@element-plus/hooks'
+import { ClickOutside as Clickoutside } from '@lt13.10/directives'
+import { useFormItem, useLocale, useNamespace, useSize } from '@lt13.10/hooks'
 
 import {
   debugWarn,
@@ -224,22 +218,21 @@ import {
   getSibling,
   isKorean,
   isValidComponentSize,
-} from '@element-plus/utils'
+} from '@lt13.10/utils'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { ArrowDown, Check, CircleClose } from '@element-plus/icons-vue'
+} from '@lt13.10/constants'
 
-import type { Options } from '@element-plus/components/popper'
+import type { Options } from '@lt13.10/components/popper'
 import type { ComputedRef, PropType, Ref } from 'vue'
 import type {
   CascaderNode,
   CascaderValue,
   Tag,
-} from '@element-plus/components/cascader-panel'
-import type { ComponentSize } from '@element-plus/constants'
+} from '@lt13.10/components/cascader-panel'
+import type { ComponentSize } from '@lt13.10/constants'
 
 type cascaderPanelType = InstanceType<typeof ElCascaderPanel>
 type tooltipType = InstanceType<typeof ElTooltip>

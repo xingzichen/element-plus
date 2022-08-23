@@ -1,6 +1,6 @@
 import { h, nextTick } from 'vue'
 import { afterEach, describe, expect, it, test, vi } from 'vitest'
-import { rAF } from '@element-plus/test-utils/tick'
+import { rAF } from '@lt13.10/test-utils/tick'
 import Notification, { closeAll } from '../src/notify'
 import { ElNotification } from '..'
 

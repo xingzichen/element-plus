@@ -18,8 +18,8 @@
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import ElInput from '@element-plus/components/input'
+import { useLocale, useNamespace } from '@lt13.10/hooks'
+import ElInput from '@lt13.10/components/input'
 import { usePagination } from '../usePagination'
 
 defineOptions({

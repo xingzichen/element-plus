@@ -1,4 +1,4 @@
-import { buildProps, definePropType, generateId } from '@element-plus/utils'
+import { buildProps, definePropType, generateId } from '@lt13.10/utils'
 import type { ExtractPropTypes } from 'vue'
 import type { CollapseActiveName } from './collapse'
 import type CollapseItem from './collapse-item.vue'

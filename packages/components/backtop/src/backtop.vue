@@ -16,10 +16,10 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref, shallowRef } from 'vue'
 import { useEventListener, useThrottleFn } from '@vueuse/core'
-import { ElIcon } from '@element-plus/components/icon'
-import { easeInOutCubic, throwError } from '@element-plus/utils'
 import { CaretTop } from '@element-plus/icons-vue'
-import { useNamespace } from '@element-plus/hooks'
+import { ElIcon } from '@lt13.10/components/icon'
+import { easeInOutCubic, throwError } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import { backtopEmits, backtopProps } from './backtop'
 
 const COMPONENT_NAME = 'ElBacktop'

@@ -1,7 +1,7 @@
 import { nextTick } from 'vue'
 import { shallowMount } from '@vue/test-utils'
 import { afterEach, describe, expect, it } from 'vitest'
-import { EVENT_CODE } from '@element-plus/constants'
+import { EVENT_CODE } from '@lt13.10/constants'
 import ElTooltipTrigger from '../src/trigger.vue'
 import { genTooltipProvides } from '../test-helper/provides'
 import { TOOLTIP_INJECTION_KEY } from '../src/tokens'

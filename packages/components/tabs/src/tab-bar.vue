@@ -9,9 +9,9 @@
 // @ts-nocheck
 import { getCurrentInstance, inject, nextTick, ref, watch } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
-import { capitalize, throwError } from '@element-plus/utils'
-import { tabsRootContextKey } from '@element-plus/tokens'
-import { useNamespace } from '@element-plus/hooks'
+import { capitalize, throwError } from '@lt13.10/utils'
+import { tabsRootContextKey } from '@lt13.10/tokens'
+import { useNamespace } from '@lt13.10/hooks'
 import { tabBarProps } from './tab-bar'
 
 import type { CSSProperties } from 'vue'

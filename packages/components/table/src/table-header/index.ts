@@ -8,8 +8,8 @@ import {
   onMounted,
   ref,
 } from 'vue'
-import ElCheckbox from '@element-plus/components/checkbox'
-import { useNamespace } from '@element-plus/hooks'
+import ElCheckbox from '@lt13.10/components/checkbox'
+import { useNamespace } from '@lt13.10/hooks'
 import FilterPanel from '../filter-panel.vue'
 import useLayoutObserver from '../layout-observer'
 import { TABLE_INJECTION_KEY } from '../tokens'

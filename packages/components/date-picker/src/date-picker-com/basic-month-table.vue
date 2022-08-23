@@ -33,9 +33,9 @@
 <script lang="ts" setup>
 import { computed, nextTick, ref, watch } from 'vue'
 import dayjs from 'dayjs'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { rangeArr } from '@element-plus/components/time-picker'
-import { castArray, hasClass } from '@element-plus/utils'
+import { useLocale, useNamespace } from '@lt13.10/hooks'
+import { rangeArr } from '@lt13.10/components/time-picker'
+import { castArray, hasClass } from '@lt13.10/utils'
 import { basicMonthTableProps } from '../props/basic-month-table'
 
 type MonthCell = {

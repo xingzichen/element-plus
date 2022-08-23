@@ -46,10 +46,10 @@ import {
   reactive,
   toRef,
 } from 'vue'
-import ElTooltip from '@element-plus/components/tooltip'
-import { Effect } from '@element-plus/components/popper'
-import { throwError } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import ElTooltip from '@lt13.10/components/tooltip'
+import { Effect } from '@lt13.10/components/popper'
+import { throwError } from '@lt13.10/utils'
+import { useNamespace } from '@lt13.10/hooks'
 import useMenu from './use-menu'
 import { menuItemEmits, menuItemProps } from './menu-item'
 

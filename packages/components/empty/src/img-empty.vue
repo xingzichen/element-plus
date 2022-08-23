@@ -128,7 +128,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 
 let id = 0
 export default defineComponent({

@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/skeleton.scss'
-import '@element-plus/components/skeleton-item/style'
+import '@lt13.10/components/base/style'
+import '@lt13.10/theme-chalk/src/skeleton.scss'
+import '@lt13.10/components/skeleton-item/style'

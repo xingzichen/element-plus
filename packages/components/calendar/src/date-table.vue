@@ -38,9 +38,9 @@
 import { computed } from 'vue'
 import dayjs from 'dayjs'
 import localeData from 'dayjs/plugin/localeData.js'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { rangeArr } from '@element-plus/components/time-picker'
-import { WEEK_DAYS } from '@element-plus/constants'
+import { useLocale, useNamespace } from '@lt13.10/hooks'
+import { rangeArr } from '@lt13.10/components/time-picker'
+import { WEEK_DAYS } from '@lt13.10/constants'
 import {
   dateTableEmits,
   dateTableProps,

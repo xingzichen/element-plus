@@ -12,8 +12,8 @@ import {
   FORWARD_REF_INJECTION_KEY,
   useForwardRefDirective,
   useNamespace,
-} from '@element-plus/hooks'
-import { debugWarn } from '@element-plus/utils'
+} from '@lt13.10/hooks'
+import { debugWarn } from '@lt13.10/utils'
 
 import type { Ref, VNode } from 'vue'
 

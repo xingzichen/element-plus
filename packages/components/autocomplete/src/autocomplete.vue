@@ -106,23 +106,23 @@ import {
 import { debounce } from 'lodash-unified'
 import { onClickOutside } from '@vueuse/core'
 import { Loading } from '@element-plus/icons-vue'
-import { useAttrs, useDisabled, useNamespace } from '@element-plus/hooks'
-import { generateId, isArray, throwError } from '@element-plus/utils'
+import { useAttrs, useDisabled, useNamespace } from '@lt13.10/hooks'
+import { generateId, isArray, throwError } from '@lt13.10/utils'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import ElInput from '@element-plus/components/input'
-import ElScrollbar from '@element-plus/components/scrollbar'
-import ElTooltip from '@element-plus/components/tooltip'
-import ElIcon from '@element-plus/components/icon'
+} from '@lt13.10/constants'
+import ElInput from '@lt13.10/components/input'
+import ElScrollbar from '@lt13.10/components/scrollbar'
+import ElTooltip from '@lt13.10/components/tooltip'
+import ElIcon from '@lt13.10/components/icon'
 import { autocompleteEmits, autocompleteProps } from './autocomplete'
 import type { AutocompleteData } from './autocomplete'
 
 import type { StyleValue } from 'vue'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
-import type { InputInstance } from '@element-plus/components/input'
+import type { TooltipInstance } from '@lt13.10/components/tooltip'
+import type { InputInstance } from '@lt13.10/components/input'
 
 defineOptions({
   name: 'ElAutocomplete',

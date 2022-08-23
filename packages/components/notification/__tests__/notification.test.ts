@@ -1,10 +1,10 @@
 // @ts-nocheck
 import { h, nextTick } from 'vue'
 import { describe, expect, test, vi } from 'vitest'
-import makeMount from '@element-plus/test-utils/make-mount'
-import { TypeComponentsMap } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
-import { useZIndex } from '@element-plus/hooks'
+import makeMount from '@lt13.10/test-utils/make-mount'
+import { TypeComponentsMap } from '@lt13.10/utils'
+import { EVENT_CODE } from '@lt13.10/constants'
+import { useZIndex } from '@lt13.10/hooks'
 import Notification from '../src/notification.vue'
 
 import type { Component, ComponentPublicInstance } from 'vue'

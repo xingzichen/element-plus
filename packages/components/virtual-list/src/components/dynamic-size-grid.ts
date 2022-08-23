@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { isFunction } from '@vue/shared'
-import { isNumber, isUndefined, throwError } from '@element-plus/utils'
+import { isNumber, isUndefined, throwError } from '@lt13.10/utils'
 import createGrid from '../builders/build-grid'
 
 import {

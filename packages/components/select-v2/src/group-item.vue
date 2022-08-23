@@ -17,7 +17,7 @@
 <script lang="ts">
 // @ts-nocheck
 import { defineComponent } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 
 export default defineComponent({
   props: {

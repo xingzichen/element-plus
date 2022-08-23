@@ -9,8 +9,8 @@
 
 <script setup lang="ts">
 import { inject, onBeforeUnmount, watch } from 'vue'
-import { composeEventHandlers } from '@element-plus/utils'
-import { tooltipV2RootKey } from '@element-plus/tokens'
+import { composeEventHandlers } from '@lt13.10/utils'
+import { tooltipV2RootKey } from '@lt13.10/tokens'
 import ForwardRef from './forward-ref'
 import { tooltipV2TriggerProps } from './trigger'
 import { tooltipV2CommonProps } from './common'

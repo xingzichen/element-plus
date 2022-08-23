@@ -2,9 +2,9 @@
 import { markRaw } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it, test } from 'vitest'
-import { rAF } from '@element-plus/test-utils/tick'
-import { triggerNativeCompositeClick } from '@element-plus/test-utils/composite-click'
 import { QuestionFilled as QuestionFilledIcon } from '@element-plus/icons-vue'
+import { rAF } from '@lt13.10/test-utils/tick'
+import { triggerNativeCompositeClick } from '@lt13.10/test-utils/composite-click'
 import MessageBox from '../src/messageBox'
 import { ElMessageBox } from '..'
 

@@ -1,4 +1,4 @@
-import { buildProps, iconPropType } from '@element-plus/utils'
+import { buildProps, iconPropType } from '@lt13.10/utils'
 
 export const dialogContentProps = buildProps({
   center: {

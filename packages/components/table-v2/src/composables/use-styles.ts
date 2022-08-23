@@ -1,5 +1,5 @@
 import { computed, unref } from 'vue'
-import { addUnit, isNumber } from '@element-plus/utils'
+import { addUnit, isNumber } from '@lt13.10/utils'
 import { enforceUnit, sum } from '../utils'
 
 import type { CSSProperties } from 'vue'

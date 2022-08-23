@@ -1,7 +1,7 @@
 import { createVNode, render } from 'vue'
 import { isClient } from '@vueuse/core'
-import { useZIndex } from '@element-plus/hooks'
-import { debugWarn, isElement, isString, isVNode } from '@element-plus/utils'
+import { useZIndex } from '@lt13.10/hooks'
+import { debugWarn, isElement, isString, isVNode } from '@lt13.10/utils'
 import NotificationConstructor from './notification.vue'
 import { notificationTypes } from './notification'
 

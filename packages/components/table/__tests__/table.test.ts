@@ -1,9 +1,9 @@
 // @ts-nocheck
 import { nextTick } from 'vue'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import ElCheckbox from '@element-plus/components/checkbox'
-import triggerEvent from '@element-plus/test-utils/trigger-event'
-import { rAF } from '@element-plus/test-utils/tick'
+import ElCheckbox from '@lt13.10/components/checkbox'
+import triggerEvent from '@lt13.10/test-utils/trigger-event'
+import { rAF } from '@lt13.10/test-utils/tick'
 import ElTable from '../src/table.vue'
 import ElTableColumn from '../src/table-column'
 import { doubleWait, getTestData, mount } from './table-test-common'

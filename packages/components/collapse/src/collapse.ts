@@ -4,11 +4,11 @@ import {
   isNumber,
   isString,
   mutable,
-} from '@element-plus/utils'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+} from '@lt13.10/utils'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 import type { ExtractPropTypes } from 'vue'
 import type Collapse from './collapse.vue'
-import type { Arrayable } from '@element-plus/utils'
+import type { Arrayable } from '@lt13.10/utils'
 
 export type CollapseActiveName = string | number
 export type CollapseModelValue = Arrayable<CollapseActiveName>

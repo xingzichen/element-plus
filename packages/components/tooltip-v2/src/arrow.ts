@@ -1,4 +1,4 @@
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@lt13.10/utils'
 import { tooltipV2Sides } from './common'
 
 import type { CSSProperties, ExtractPropTypes } from 'vue'

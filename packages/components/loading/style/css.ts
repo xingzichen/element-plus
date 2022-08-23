@@ -1,2 +1,2 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/theme-chalk/el-loading.css'
+import '@lt13.10/components/base/style/css'
+import '@lt13.10/theme-chalk/el-loading.css'

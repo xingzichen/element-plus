@@ -1,11 +1,6 @@
 import { isNil } from 'lodash-unified'
-import {
-  buildProps,
-  definePropType,
-  isArray,
-  mutable,
-} from '@element-plus/utils'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { buildProps, definePropType, isArray, mutable } from '@lt13.10/utils'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 
 import type { ExtractPropTypes, h as H, VNode } from 'vue'
 import type Transfer from './transfer.vue'

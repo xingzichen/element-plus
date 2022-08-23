@@ -92,14 +92,14 @@ import {
   watch,
 } from 'vue'
 import { isPromise } from '@vue/shared'
-import { addUnit, debugWarn, isBoolean, throwError } from '@element-plus/utils'
-import ElIcon from '@element-plus/components/icon'
 import { Loading } from '@element-plus/icons-vue'
+import { addUnit, debugWarn, isBoolean, throwError } from '@lt13.10/utils'
+import ElIcon from '@lt13.10/components/icon'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@lt13.10/constants'
 import {
   useDeprecated,
   useDisabled,
@@ -107,7 +107,7 @@ import {
   useFormItemInputId,
   useNamespace,
   useSize,
-} from '@element-plus/hooks'
+} from '@lt13.10/hooks'
 import { switchEmits, switchProps } from './switch'
 import type { CSSProperties } from 'vue'
 

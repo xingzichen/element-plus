@@ -1,5 +1,5 @@
-import { buildProps, definePropType } from '@element-plus/utils'
-import type { Measurable } from '@element-plus/tokens'
+import { buildProps, definePropType } from '@lt13.10/utils'
+import type { Measurable } from '@lt13.10/tokens'
 
 export const usePopperTriggerProps = buildProps({
   virtualRef: {

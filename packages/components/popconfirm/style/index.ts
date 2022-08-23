@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/popconfirm.scss'
-import '@element-plus/components/popover/style'
+import '@lt13.10/components/base/style'
+import '@lt13.10/theme-chalk/src/popconfirm.scss'
+import '@lt13.10/components/popover/style'

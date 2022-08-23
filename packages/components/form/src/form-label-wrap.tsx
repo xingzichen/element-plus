@@ -11,9 +11,9 @@ import {
   watch,
 } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
-import { throwError } from '@element-plus/utils'
-import { formContextKey, formItemContextKey } from '@element-plus/tokens'
-import { useNamespace } from '@element-plus/hooks'
+import { throwError } from '@lt13.10/utils'
+import { formContextKey, formItemContextKey } from '@lt13.10/tokens'
+import { useNamespace } from '@lt13.10/hooks'
 
 import type { CSSProperties } from 'vue'
 

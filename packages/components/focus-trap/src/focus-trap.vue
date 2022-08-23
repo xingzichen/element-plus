@@ -13,9 +13,9 @@ import {
   watch,
 } from 'vue'
 import { isNil } from 'lodash-unified'
-import { EVENT_CODE } from '@element-plus/constants'
-import { useEscapeKeydown } from '@element-plus/hooks'
-import { isString } from '@element-plus/utils'
+import { EVENT_CODE } from '@lt13.10/constants'
+import { useEscapeKeydown } from '@lt13.10/hooks'
+import { isString } from '@lt13.10/utils'
 import {
   focusFirstDescendant,
   focusableStack,

@@ -1,15 +1,15 @@
 // @ts-nocheck
 import { computed, nextTick, toRefs, watch } from 'vue'
 import { isEqual, pick } from 'lodash-unified'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { isFunction } from '@element-plus/utils'
-import ElTree from '@element-plus/components/tree'
+import { UPDATE_MODEL_EVENT } from '@lt13.10/constants'
+import { isFunction } from '@lt13.10/utils'
+import ElTree from '@lt13.10/components/tree'
 import TreeSelectOption from './tree-select-option'
 import { isValidArray, isValidValue, toValidArray, treeFind } from './utils'
 import type { Ref } from 'vue'
-import type ElSelect from '@element-plus/components/select'
-import type Node from '@element-plus/components/tree/src/model/node'
-import type { TreeNodeData } from '@element-plus/components/tree/src/tree.type'
+import type ElSelect from '@lt13.10/components/select'
+import type Node from '@lt13.10/components/tree/src/model/node'
+import type { TreeNodeData } from '@lt13.10/components/tree/src/tree.type'
 
 export const useTree = (
   props,

@@ -6,8 +6,8 @@
 
 <script lang="ts" setup>
 import { provide, ref, watch } from 'vue'
-import { CHANGE_EVENT } from '@element-plus/constants'
-import { useNamespace } from '@element-plus/hooks'
+import { CHANGE_EVENT } from '@lt13.10/constants'
+import { useNamespace } from '@lt13.10/hooks'
 import { stepsEmits, stepsProps } from './steps'
 
 import type { Ref } from 'vue'

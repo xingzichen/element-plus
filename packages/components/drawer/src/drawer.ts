@@ -1,5 +1,5 @@
-import { buildProps } from '@element-plus/utils'
-import { dialogEmits, dialogProps } from '@element-plus/components/dialog'
+import { buildProps } from '@lt13.10/utils'
+import { dialogEmits, dialogProps } from '@lt13.10/components/dialog'
 import type { ExtractPropTypes } from 'vue'
 
 export const drawerProps = buildProps({

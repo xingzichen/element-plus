@@ -14,7 +14,7 @@ import {
   epPackage,
   getPackageDependencies,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@lt13.10/build-utils'
 import { MarkdownTransform } from './.vitepress/plugins/markdown-transform'
 
 import type { Alias } from 'vite'
@@ -47,7 +47,7 @@ export default defineConfig(async ({ mode }) => {
   const optimizeDeps = [...new Set([...epDeps, ...docsDeps])].filter(
     (dep) =>
       !dep.startsWith('@types/') &&
-      !['@element-plus/metadata', '@lt13.10/element-plus'].includes(dep)
+      !['@lt13.10/metadata', '@lt13.10/element-plus'].includes(dep)
   )
 
   optimizeDeps.push(

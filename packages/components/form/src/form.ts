@@ -1,15 +1,15 @@
-import { componentSizes } from '@element-plus/constants'
+import { componentSizes } from '@lt13.10/constants'
 import {
   buildProps,
   definePropType,
   isArray,
   isBoolean,
   isString,
-} from '@element-plus/utils'
+} from '@lt13.10/utils'
 
 import type { ExtractPropTypes } from 'vue'
 import type { FormItemProp } from './form-item'
-import type { FormRules } from '@element-plus/tokens'
+import type { FormRules } from '@lt13.10/tokens'
 
 export const formProps = buildProps({
   model: Object,

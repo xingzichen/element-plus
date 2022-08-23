@@ -1,6 +1,6 @@
 import { computed, defineComponent, nextTick, ref, unref } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { ensureArray } from '@element-plus/utils'
+import { useNamespace } from '@lt13.10/hooks'
+import { ensureArray } from '@lt13.10/utils'
 import { tableV2HeaderProps } from '../header'
 import { enforceUnit } from '../utils'
 

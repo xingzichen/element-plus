@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { inject } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 import {
   ensurePosition,
   getFixedColumnOffset,

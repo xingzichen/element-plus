@@ -1,5 +1,5 @@
 import { Star, StarFilled } from '@element-plus/icons-vue'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 import {
   buildProps,
   definePropType,
@@ -7,8 +7,8 @@ import {
   isNumber,
   isValidComponentSize,
   mutable,
-} from '@element-plus/utils'
-import type { ComponentSize } from '@element-plus/constants'
+} from '@lt13.10/utils'
+import type { ComponentSize } from '@lt13.10/constants'
 import type { Component, ExtractPropTypes, PropType } from 'vue'
 import type Rate from './rate.vue'
 

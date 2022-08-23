@@ -1,4 +1,4 @@
-import { buildProps, isNumber } from '@element-plus/utils'
+import { buildProps, isNumber } from '@lt13.10/utils'
 import type { ExtractPropTypes } from 'vue'
 import type Carousel from './carousel.vue'
 

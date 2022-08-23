@@ -75,13 +75,13 @@ import {
 } from 'vue'
 import { throttle } from 'lodash-unified'
 import { useResizeObserver } from '@vueuse/core'
-import { debugWarn, isString } from '@element-plus/utils'
-import { ElIcon } from '@element-plus/components/icon'
 import { ArrowLeft, ArrowRight } from '@element-plus/icons-vue'
-import { useNamespace } from '@element-plus/hooks'
-import { carouselContextKey } from '@element-plus/tokens'
+import { debugWarn, isString } from '@lt13.10/utils'
+import { ElIcon } from '@lt13.10/components/icon'
+import { useNamespace } from '@lt13.10/hooks'
+import { carouselContextKey } from '@lt13.10/tokens'
 import { carouselEmits, carouselProps } from './carousel'
-import type { CarouselItemContext } from '@element-plus/tokens'
+import type { CarouselItemContext } from '@lt13.10/tokens'
 
 defineOptions({
   name: 'ElCarousel',

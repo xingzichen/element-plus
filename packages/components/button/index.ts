@@ -1,4 +1,4 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@lt13.10/utils'
 import Button from './src/button.vue'
 import ButtonGroup from './src/button-group.vue'
 

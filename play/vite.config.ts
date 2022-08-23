@@ -15,7 +15,7 @@ import {
   getPackageDependencies,
   pkgRoot,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@lt13.10/build-utils'
 import './vite.init'
 
 const esbuildPlugin = () => ({

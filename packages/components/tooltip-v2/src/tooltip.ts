@@ -1,4 +1,4 @@
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@lt13.10/utils'
 import { tooltipV2RootProps } from './root'
 import { tooltipV2TriggerProps } from './trigger'
 import { tooltipV2ArrowProps } from './arrow'

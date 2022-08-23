@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/tooltip.scss'
-import '@element-plus/components/popper/style'
+import '@lt13.10/components/base/style'
+import '@lt13.10/theme-chalk/src/tooltip.scss'
+import '@lt13.10/components/popper/style'

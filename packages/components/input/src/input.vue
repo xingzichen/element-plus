@@ -167,19 +167,19 @@ import {
 } from 'vue'
 import { isClient, useResizeObserver } from '@vueuse/core'
 import { isNil } from 'lodash-unified'
-import { ElIcon } from '@element-plus/components/icon'
 import {
   CircleClose,
   Hide as IconHide,
   View as IconView,
 } from '@element-plus/icons-vue'
+import { ElIcon } from '@lt13.10/components/icon'
 import {
   NOOP,
   ValidateComponentsMap,
   debugWarn,
   isKorean,
   isObject,
-} from '@element-plus/utils'
+} from '@lt13.10/utils'
 import {
   useAttrs,
   useCursor,
@@ -188,8 +188,8 @@ import {
   useFormItemInputId,
   useNamespace,
   useSize,
-} from '@element-plus/hooks'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+} from '@lt13.10/hooks'
+import { UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 import { calcTextareaHeight } from './utils'
 import { inputEmits, inputProps } from './input'
 import type { StyleValue } from 'vue'

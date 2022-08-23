@@ -1,8 +1,8 @@
 import { nextTick } from 'vue'
 import { describe, expect, test } from 'vitest'
 
-import { IMAGE_SUCCESS } from '@element-plus/test-utils/mock'
-import makeMount from '@element-plus/test-utils/make-mount'
+import { IMAGE_SUCCESS } from '@lt13.10/test-utils/mock'
+import makeMount from '@lt13.10/test-utils/make-mount'
 import ImageViewer from '../src/image-viewer.vue'
 
 const mount = makeMount(ImageViewer, {

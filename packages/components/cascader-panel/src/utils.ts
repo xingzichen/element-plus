@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { isLeaf } from '@element-plus/utils'
+import { isLeaf } from '@lt13.10/utils'
 import type { default as CascaderNode } from './node'
 
 export const getMenuIndex = (el: HTMLElement) => {

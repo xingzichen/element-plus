@@ -6,13 +6,13 @@ import {
   isNumber,
   isString,
   isValidComponentSize,
-} from '@element-plus/utils'
+} from '@lt13.10/utils'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import type { ComponentSize } from '@element-plus/constants'
+} from '@lt13.10/constants'
+import type { ComponentSize } from '@lt13.10/constants'
 import type Switch from './switch.vue'
 import type { ExtractPropTypes, PropType } from 'vue'
 

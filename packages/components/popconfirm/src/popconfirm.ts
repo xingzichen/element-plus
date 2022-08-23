@@ -1,7 +1,7 @@
-import { buttonTypes } from '@element-plus/components/button'
 import { QuestionFilled } from '@element-plus/icons-vue'
-import { buildProps, definePropType, iconPropType } from '@element-plus/utils'
-import { useTooltipContentProps } from '@element-plus/components/tooltip'
+import { buttonTypes } from '@lt13.10/components/button'
+import { buildProps, definePropType, iconPropType } from '@lt13.10/utils'
+import { useTooltipContentProps } from '@lt13.10/components/tooltip'
 import type { Component, ExtractPropTypes } from 'vue'
 import type Popconfirm from './popconfirm.vue'
 

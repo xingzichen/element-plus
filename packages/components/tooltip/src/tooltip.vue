@@ -64,15 +64,15 @@ import {
   ElPopperArrow,
   usePopperArrowProps,
   usePopperProps,
-} from '@element-plus/components/popper'
+} from '@lt13.10/components/popper'
 
-import { debugWarn, isBoolean, isUndefined } from '@element-plus/utils'
+import { debugWarn, isBoolean, isUndefined } from '@lt13.10/utils'
 import {
   createModelToggleComposable,
   useDelayedToggle,
   useId,
   usePopperContainer,
-} from '@element-plus/hooks'
+} from '@lt13.10/hooks'
 import ElTooltipContent from './content.vue'
 import ElTooltipTrigger from './trigger.vue'
 import {

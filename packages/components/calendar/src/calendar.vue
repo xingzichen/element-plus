@@ -46,10 +46,10 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import dayjs from 'dayjs'
-import { ElButton, ElButtonGroup } from '@element-plus/components/button'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { debugWarn } from '@element-plus/utils'
-import { INPUT_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { ElButton, ElButtonGroup } from '@lt13.10/components/button'
+import { useLocale, useNamespace } from '@lt13.10/hooks'
+import { debugWarn } from '@lt13.10/utils'
+import { INPUT_EVENT, UPDATE_MODEL_EVENT } from '@lt13.10/constants'
 import DateTable from './date-table.vue'
 import { calendarEmits, calendarProps } from './calendar'
 

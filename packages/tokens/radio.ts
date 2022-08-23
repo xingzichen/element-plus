@@ -1,4 +1,4 @@
-import type { RadioGroupProps } from '@element-plus/components'
+import type { RadioGroupProps } from '@lt13.10/components'
 import type { InjectionKey } from 'vue'
 
 export interface RadioGroupContext extends RadioGroupProps {

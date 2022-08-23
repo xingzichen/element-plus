@@ -10,7 +10,7 @@
 <script lang="ts">
 import { computed, defineComponent, inject, onMounted, ref } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 import { selectKey } from './token'
 
 export default defineComponent({

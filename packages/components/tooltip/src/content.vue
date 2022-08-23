@@ -56,8 +56,8 @@ import {
   watch,
 } from 'vue'
 import { onClickOutside } from '@vueuse/core'
-import { ElPopperContent } from '@element-plus/components/popper'
-import { composeEventHandlers } from '@element-plus/utils'
+import { ElPopperContent } from '@lt13.10/components/popper'
+import { composeEventHandlers } from '@lt13.10/utils'
 
 import { useTooltipContentProps } from './tooltip'
 import { TOOLTIP_INJECTION_KEY } from './tokens'

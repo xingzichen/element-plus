@@ -1,1 +1,1 @@
-export * from '@element-plus/locale'
+export * from '@lt13.10/locale'

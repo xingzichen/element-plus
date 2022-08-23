@@ -11,9 +11,9 @@
 
 <script lang="ts" setup>
 import { onMounted, provide, ref } from 'vue'
-import { breadcrumbKey } from '@element-plus/tokens'
+import { breadcrumbKey } from '@lt13.10/tokens'
 
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@lt13.10/hooks'
 import { breadcrumbProps } from './breadcrumb'
 
 defineOptions({

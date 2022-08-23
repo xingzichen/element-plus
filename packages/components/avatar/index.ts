@@ -1,4 +1,4 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@lt13.10/utils'
 import Avatar from './src/avatar.vue'
 
 export const ElAvatar = withInstall(Avatar)

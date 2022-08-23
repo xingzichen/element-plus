@@ -9,7 +9,7 @@ import {
   hasClass,
   removeClass,
   throwError,
-} from '@element-plus/utils'
+} from '@lt13.10/utils'
 import { useNamespace } from '../use-namespace'
 
 import type { Ref } from 'vue'

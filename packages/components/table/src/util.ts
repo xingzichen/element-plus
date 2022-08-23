@@ -2,13 +2,10 @@
 import { createPopper } from '@popperjs/core'
 import { get } from 'lodash-unified'
 import escapeHtml from 'escape-html'
-import { hasOwn } from '@element-plus/utils'
-import { useZIndex } from '@element-plus/hooks'
-import type {
-  IPopperOptions,
-  PopperInstance,
-} from '@element-plus/components/popper'
-import type { Nullable } from '@element-plus/utils'
+import { hasOwn } from '@lt13.10/utils'
+import { useZIndex } from '@lt13.10/hooks'
+import type { IPopperOptions, PopperInstance } from '@lt13.10/components/popper'
+import type { Nullable } from '@lt13.10/utils'
 import type { TableColumnCtx } from './table-column/defaults'
 
 export const getCell = function (event: Event) {

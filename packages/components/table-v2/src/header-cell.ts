@@ -1,4 +1,4 @@
-import { buildProps } from '@element-plus/utils'
+import { buildProps } from '@lt13.10/utils'
 import { classType, column } from './common'
 
 import type { ExtractPropTypes } from 'vue'

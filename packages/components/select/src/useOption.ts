@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { computed, getCurrentInstance, inject, toRaw, unref, watch } from 'vue'
 import { get } from 'lodash-unified'
-import { escapeStringRegexp } from '@element-plus/utils'
+import { escapeStringRegexp } from '@lt13.10/utils'
 import { selectGroupKey, selectKey } from './token'
 
 import type { Ref } from 'vue'

@@ -1,4 +1,4 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@lt13.10/utils'
 import TooltipV2 from './src/tooltip.vue'
 
 export const ElTooltipV2 = withInstall(TooltipV2)
