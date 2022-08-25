@@ -26,7 +26,7 @@ import type {
   VNodeArrayChildren,
   VNodeChild,
 } from 'vue'
-import type { Arrayable } from '@element-plus/utils'
+import type { Arrayable } from '@lt13.10/utils'
 import type { AlignItemsProperty } from 'csstype'
 
 export const spaceProps = buildProps({
