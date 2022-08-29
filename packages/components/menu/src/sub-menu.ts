@@ -18,7 +18,7 @@ import { useTimeoutFn } from '@vueuse/core'
 import { ArrowDown, ArrowRight } from '@element-plus/icons-vue'
 import ElCollapseTransition from '@lt13.10/components/collapse-transition'
 import ElTooltip from '@lt13.10/components/tooltip'
-import { buildProps, throwError } from '@lt13.10/utils'
+import { buildProps, iconPropType, isString, throwError } from '@lt13.10/utils'
 import { useNamespace } from '@lt13.10/hooks'
 import { ElIcon } from '@lt13.10/components/icon'
 import useMenu from './use-menu'
@@ -50,6 +50,18 @@ export const subMenuProps = buildProps({
   popperOffset: {
     type: Number,
     default: 6,
+  },
+  expandCloseIcon: {
+    type: iconPropType,
+  },
+  expandOpenIcon: {
+    type: iconPropType,
+  },
+  collapseCloseIcon: {
+    type: iconPropType,
+  },
+  collapseOpenIcon: {
+    type: iconPropType,
   },
 } as const)
 export type SubMenuProps = ExtractPropTypes<typeof subMenuProps>
@@ -92,7 +104,15 @@ export default defineComponent({
     const subMenuTitleIcon = computed(() => {
       return (mode.value === 'horizontal' && isFirstLevel.value) ||
         (mode.value === 'vertical' && !rootMenu.props.collapse)
-        ? ArrowDown
+        ? props.expandCloseIcon && props.expandOpenIcon
+          ? opened.value
+            ? props.expandOpenIcon
+            : props.expandCloseIcon
+          : ArrowDown
+        : props.collapseCloseIcon && props.collapseOpenIcon
+        ? opened.value
+          ? props.collapseOpenIcon
+          : props.collapseCloseIcon
         : ArrowRight
     })
     const isFirstLevel = computed(() => {
@@ -294,8 +314,23 @@ export default defineComponent({
           ElIcon,
           {
             class: nsSubMenu.e('icon-arrow'),
+            style: {
+              transform: opened.value
+                ? (props.expandCloseIcon && props.expandOpenIcon) ||
+                  (props.collapseCloseIcon &&
+                    props.collapseOpenIcon &&
+                    rootMenu.props.collapse)
+                  ? 'none'
+                  : 'rotateZ(180deg)'
+                : 'none',
+            },
           },
-          { default: () => h(subMenuTitleIcon.value) }
+          {
+            default: () =>
+              isString(subMenuTitleIcon.value)
+                ? h(instance.appContext.components[subMenuTitleIcon.value])
+                : h(subMenuTitleIcon.value),
+          }
         ),
       ]
 

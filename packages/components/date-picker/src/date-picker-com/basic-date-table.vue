@@ -47,6 +47,7 @@
 <script lang="ts" setup>
 import { computed, nextTick, ref, unref, watch } from 'vue'
 import dayjs from 'dayjs'
+import { flatten } from 'lodash'
 import { useLocale, useNamespace } from '@lt13.10/hooks'
 import { castArray } from '@lt13.10/utils'
 import { basicDateTableProps } from '../props/basic-date-table'
@@ -98,7 +99,7 @@ const WEEKS = computed(() => {
 })
 
 const hasCurrent = computed<boolean>(() => {
-  return rows.value.flat().some((row) => {
+  return flatten(rows.value).some((row) => {
     return row.isCurrent
   })
 })
